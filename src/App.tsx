@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Hobbies from "./components/Hobbies";
 import Navbar from "./components/Navbar";
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <AboutMe />
+      <Experience />
       <Projects />
       <Hobbies />
       <div className="flex h-screen w-screen items-center justify-center">
