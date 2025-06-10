@@ -23,7 +23,7 @@ const Experience = () => {
                 Mehrwerk
                 <img
                   src="https://www.mehrwerk.com/favicon.ico"
-                  className="absolute top-1/2 ml-2 inline-block h-5 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  className="ml-2 inline-block h-5 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
                   alt="Mehrwerk logo"
                 />
               </a>
@@ -47,7 +47,7 @@ const Experience = () => {
                 Staatsanwaltschaft Bielefeld
                 <img
                   src="https://www.sta-bielefeld.nrw.de/favicon.ico"
-                  className="absolute top-1/2 ml-2 inline-block h-5 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  className="ml-2 inline-block h-5 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
                   alt="Staatsanwaltschaft Bielefeld logo"
                 />
               </a>
@@ -71,7 +71,7 @@ const Experience = () => {
                 PIT
                 <img
                   src="https://paderborn-ist-informatik.de/wp-content/uploads/2017/01/favicon.png"
-                  className="absolute top-1/2 ml-2 inline-block h-5 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  className="ml-2 inline-block h-5 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
                   alt="PIT logo"
                 />
               </a>
@@ -90,7 +90,7 @@ const Experience = () => {
           </li>
           <li>
             <h2 className="text-2xl font-bold">
-              Student for softwate Engineering at{" "}
+              Student for software Engineering at{" "}
               <a
                 target="_blank"
                 href="https://www.bib.de/"
@@ -99,7 +99,7 @@ const Experience = () => {
                 bib Internation College
                 <img
                   src="https://icons.duckduckgo.com/ip3/www.bib.de.ico"
-                  className="absolute top-1/2 ml-2 inline-block h-5 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  className="ml-2 inline-block h-5 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
                   alt="bib logo"
                 />
               </a>
@@ -126,7 +126,7 @@ const Experience = () => {
                 Hörmann
                 <img
                   src="https://www.hoermann.de/favicon.ico"
-                  className="absolute top-1/2 ml-2 inline-block h-5 -translate-y-1/2 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+                  className="ml-2 inline-block h-5 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
                   alt="Hoermann logo"
                 />
               </a>
