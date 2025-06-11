@@ -1,8 +1,11 @@
 import Button from "./button/Button";
 import resumePicture from "../assets/IMG_90951.png";
 import { IoMailOutline } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const [t] = useTranslation("global");
+
   return (
     <div className="bg-creme w-screen items-center justify-center p-15 lg:flex-col">
       <div className="mb-8 flex flex-col gap-4">
@@ -10,14 +13,9 @@ const AboutMe = () => {
           id="resume"
           className="text-[clamp(2.5rem,5vw,4rem)] font-bold italic"
         >
-          Hello I'm Sean!
+          {t("about.title")}
         </h2>
-        <p>
-          I am a junior developer with a strong interest in software
-          engineering. I am eager to learn new things, wether it is related to
-          my job or something entirely else. If you want to cooperate don't
-          hesistate to contact me!
-        </p>
+        <p>{t("about.description")}</p>
         <Button
           variant="tertiary"
           onClick={() =>
@@ -39,7 +37,7 @@ const AboutMe = () => {
         </div>
         <div className="bg-black p-5">
           <h6 className="font-jetbrains mb-3 text-3xl text-white italic">
-            Contact
+            {t("about.contact")}
           </h6>
           <div
             onClick={() =>
