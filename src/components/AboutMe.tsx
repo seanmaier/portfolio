@@ -1,11 +1,15 @@
 import Button from "./button/Button";
 import resumePicture from "../assets/IMG_90951.png";
+import { IoMailOutline } from "react-icons/io5";
 
 const AboutMe = () => {
   return (
-    <div className="h-screen w-screen items-center justify-center p-15 lg:flex-col">
+    <div className="bg-creme w-screen items-center justify-center p-15 lg:flex-col">
       <div className="mb-8 flex flex-col gap-4">
-        <h2 id="resume" className="text-4xl font-bold italic">
+        <h2
+          id="resume"
+          className="text-[clamp(2.5rem,5vw,4rem)] font-bold italic"
+        >
           Hello I'm Sean!
         </h2>
         <p>
@@ -15,6 +19,7 @@ const AboutMe = () => {
           hesistate to contact me!
         </p>
         <Button
+          variant="tertiary"
           onClick={() =>
             (window.location.href = "https://www.linkedin.com/in/maiersean/")
           }
@@ -22,25 +27,28 @@ const AboutMe = () => {
           linkedin.com/in/maiersean
         </Button>
       </div>
-      <div>
-        <div>
-          <div className="bg-primary-500 absolute -z-1 h-[200px] w-[308px] translate-y-27"></div>
-          <img src={resumePicture} alt="Resume Icon" />
+      <div className="max-w-sm lg:w-1/2">
+        <div className="relative">
+          <img
+            src={resumePicture}
+            alt="Resume Icon"
+            className="relative z-20"
+          />
+          <span className="before:bg-primary-500 absolute inset-0 before:absolute before:inset-0 before:top-[35%] before:content-['']"></span>
+          <span className="before:bg-creme absolute inset-0 before:absolute before:inset-[25%] before:top-[40%] before:h-[60%] before:w-[60%] before:rounded-full before:content-['']"></span>
         </div>
         <div className="bg-black p-5">
-          <h6 className="mb-3 text-2xl text-white">Contact</h6>
+          <h6 className="font-jetbrains mb-3 text-3xl text-white italic">
+            Contact
+          </h6>
           <div
             onClick={() =>
               (window.location.href = "mailto:sean.maier@outlook.com")
             }
             className="hover:bg-primary-500 flex cursor-pointer items-center gap-3 rounded-2xl p-2 transition-colors duration-300"
           >
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
-              alt="Resume Icon"
-              className="ml-2 h-6 w-6"
-            />
-            <p className="text-white">sean.maier@outlook.de</p>
+            <IoMailOutline className="text-2xl font-bold text-white" />
+            <p className="font-jetbrains text-white">sean.maier@outlook.de</p>
           </div>
         </div>
       </div>
