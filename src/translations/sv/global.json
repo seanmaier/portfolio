@@ -1,0 +1,37 @@
+{
+  "navbar": {
+    "about": "Om mig",
+    "resume": "CV",
+    "projects": "Projekt",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "alt": "Bild på mig",
+    "title": "Portfolio",
+    "description": "Fokuserad på att lära mig nya saker och utforska mjukvaruvärlden. Alltid redo för en ny utmaning!",
+    "scrollDown": "Scrolla ner"
+  },
+  "about": {
+    "title": "Hello, jag är Sean!",
+    "description": "Jag är en juniorutvecklare med stort intresse för mjukvaruutveckling. Jag är nyfiken och gillar att lära mig nya saker, oavsett om det är relaterat till mitt yrke eller något helt annat. Om du vill samarbeta, tveka inte att kontakta mig!",
+    "contact": "Kontakt"
+  },
+  "career": {
+    "title": "Karriär",
+    "mehrwerk-title": "Praktik hos",
+    "mehrwerk-date": "Jan 2019 - Feb 2019",
+    "mehrwerk-description": "Första praktiska erfarenheten inom IT. Jag fick lära mig om strukturen i ett mjukvaruföretag och arbeta i ett team för första gången.",
+    "staatsanwaltschaft-title": "Praktik hos",
+    "staatsanwaltschaft-date": "Jun 2019 - Jul 2019",
+    "staatsanwaltschaft-description": "Hos åklagarmyndigheten lärde jag mig vikten av precisa formuleringar. Min första erfarenhet av juridiska dokument och deras utformning.",
+    "pit_2024-title": "Hackathon hos",
+    "pit_2024-date": "Sep 2024",
+    "pit_2024-description": "Jag deltog i en hackathon organiserad av PIT (Paderborn är Informatik). Evenemanget fokuserade på att utveckla innovativa lösningar på verkliga problem. Jag samarbetade med andra deltagare för att under en helg utveckla en mjukvarulösning för en konkret utmaning. Denna erfarenhet förbättrade mina problemlösningsförmågor och gav mig möjlighet att tillämpa mina kunskaper praktiskt.",
+    "bib-title": "Student inom mjukvaruutveckling vid",
+    "bib-date": "Aug 2023 - Nuvarande",
+    "bib-description": "För närvarande inskriven i programmet för mjukvaruutveckling vid b.i.b. International College. Programmet fokuserar på praktiska tillämpningar av mjukvaruutveckling, inklusive programmering, projektledning och teamarbete. Jag får värdefulla färdigheter och kunskaper som förbereder mig för en framgångsrik karriär inom mjukvarubranschen. Lärling inom mjukvaruutveckling hos Hörmann.",
+    "hoermann-title": "Lärling inom mjukvaruutveckling hos",
+    "hoermann-date": "Aug 2023 - Nuvarande",
+    "hoermann-description": "Jag är för närvarande lärling som mjukvaruutvecklare hos Hörmann. Jag lär mig hur man utvecklar mjukvara i en professionell miljö och arbetar med olika teknologier och metoder. Automatisering och optimering av processer är centrala delar av mitt arbete. Första erfarenheter av ERP-system som SAP."
+  }
+}

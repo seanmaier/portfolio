@@ -1,0 +1,37 @@
+{
+  "navbar": {
+    "about": "Über mich",
+    "resume": "Lebenslauf",
+    "projects": "Projekte",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "alt": "Bild von mir",
+    "title": "Portfolio",
+    "description": "Fokussiert darauf, Neues zu lernen und die Welt der Software zu erkunden. Immer bereit für eine neue Herausforderung!",
+    "scrollDown": "Runterscrollen"
+  },
+  "about": {
+    "title": "Hallo, ich bin Sean!",
+    "description": "Ich bin ein Junior-Entwickler mit großem Interesse an Software Engineering. Ich bin neugierig und lerne gerne Neues, egal ob es mit meinem Beruf zu tun hat oder etwas ganz anderes ist. Wenn Sie kooperieren möchten, zögern Sie nicht, mich zu kontaktieren!",
+    "contact": "Kontakt"
+  },
+  "career": {
+    "title": "Karriere",
+    "mehrwerk-title": "Praktikum bei",
+    "mehrwerk-date": "Jan. 2019 - Feb. 2019",
+    "mehrwerk-description": "Erste praktische Erfahrungen in IT. Ich konnte die Struktur eines Softwareunternehmens kennenlernen und erste Erfahrungen in einem Team machen.",
+    "staatsanwaltschaft-title": "Praktikum bei",
+    "staatsanwaltschaft-date": "Jun. 2019 - Jul. 2019",
+    "staatsanwaltschaft-description": "Bei der Staatsanwaltschaft habe ich gelernt, wie wichtig präzise Formulierungen sind. Meine erste Erfahrungen mit juristischen Dokumenten und deren Erstellung.",
+    "pit_2024-title": "Hackathon bei",
+    "pit_2024-date": "Sept. 2024",
+    "pit_2024-description": "Ich habe an einem Hackathon teilgenommen, der von PIT (Paderborn ist Informatik) organisiert wurde. Die Veranstaltung konzentrierte sich auf die Entwicklung innovativer Lösungen für reale Probleme. Ich habe mit anderen Teilnehmern zusammengearbeitet, um an einem Wochenende eine Softwarelösung für eine konkrete Herausforderung zu entwickeln. Diese Erfahrung hat meine Problemlösungsfähigkeiten verbessert und mir ermöglicht, mein Wissen praktisch anzuwenden.",
+    "bib-title": "Student für Software Engineering am",
+    "bib-date": "Aug. 2023 - Gegenwart",
+    "bib-description": "Derzeit im Studiengang Software Engineering am b.i.b. International College eingeschrieben. Das Programm legt den Fokus auf praktische Anwendungen der Softwareentwicklung, einschließlich Programmierung, Projektmanagement und Teamarbeit. Ich erwerbe wertvolle Fähigkeiten und Kenntnisse, die mich auf eine erfolgreiche Karriere in der Softwarebranche vorbereiten. Auszubildender Software Engineering bei Hörmann",
+    "hoermann-title": "Auszubildender Software Engineering bei",
+    "hoermann-date": "Aug. 2023 - Gegenwart",
+    "hoermann-description": "Derzeit in meiner Ausbildung als Softwareentwickler bei Hörmann. Ich lerne, wie man Software in einem professionellen Umfeld entwickelt und arbeite mit verschiedenen Technologien und Methoden. Automatisierung und Optimierung von Prozessen sind zentrale Aspekte meiner Tätigkeit. Erste Erfahrungen mit ERP-Systemen wie SAP."
+  }
+}
