@@ -2,7 +2,14 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "text" | "danger" | "ghost" | "link";
+  variant?:
+    | "primary"
+    | "secondary"
+    | "tertiary"
+    | "text"
+    | "danger"
+    | "ghost"
+    | "link";
   size?: "sm" | "md" | "lg";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
   fullWidth?: boolean;
@@ -37,6 +44,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         "bg-secondary-500 hover:bg-secondary-900 text-white focus:ring-blue-500",
       secondary:
         "bg-gray-200 hover:bg-gray-300 text-gray-800 focus:ring-gray-500",
+      tertiary:
+        "bg-tertiary-500 font-bold hover:bg-tertiary-700 text-white focus:ring-gray-500 border border-gray-300",
       text: "bg-transparent hover:bg-primary-100 hover:text-primary-700 text-gray-200 focus:ring-gray-500",
       danger: "bg-red-600 hover:bg-red-700 text-white focus:ring-red-500",
       ghost:

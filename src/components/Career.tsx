@@ -7,9 +7,6 @@ const Career = () => {
       >
         Career
       </h1>
-      {/* <div className="grid" style={{ gridTemplateRows: "3px 1fr" }}>
-        <div>August 30, 2017</div>
-      </div> */}
       <div className="main container">
         <ul>
           <li>

@@ -23,9 +23,9 @@ const Hero = () => {
       </div>
 
       <div className="bg-primary-900 flex w-screen flex-col items-center justify-center gap-10 p-10 pb-0">
-        <p className="absolute w-100 -translate-y-20 text-center text-white">
-          Focussed on learning new things and Exploring the world of software.
-          Always in for a new challenge!
+        <p className="font-jetbrains absolute w-100 -translate-y-20 text-center text-white">
+          "Focussed on learning new things and Exploring the world of software.
+          Always in for a new challenge!""
         </p>
         <div className="bg-secondary-500 flex h-20 w-20 translate-y-10 animate-bounce items-center justify-center rounded-full">
           <span className="text-xs font-bold">Scroll down</span>

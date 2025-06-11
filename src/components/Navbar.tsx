@@ -2,11 +2,14 @@ import Button from "./button/Button";
 
 const Navbar = () => {
   return (
-    <div className="bg-primary-500 sticky top-0 z-50 flex h-16 items-center justify-between px-5 md:px-20">
-      <div>
-        <Button size="sm" variant="text">
+    <div className="navbar bg-primary-500 sticky top-0 z-100 flex h-16 items-center justify-between px-5 md:px-20">
+      <div className="relative flex items-center gap-3">
+        {/* <Button size="sm" variant="text">
           Sean Maier
-        </Button>
+        </Button> */}
+        <p className="text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-0.5 before:bg-white before:content-['']">
+          Sean Maier
+        </p>
       </div>
       <div className="flex gap-5">
         <div className="hidden gap-3 sm:flex">
