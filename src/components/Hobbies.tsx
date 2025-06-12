@@ -2,11 +2,41 @@ const Hobbies = () => {
   return (
     <div
       id="hobbies"
-      className="bg-creme flex h-screen w-screen items-center justify-center"
+      className="bg-creme flex h-screen flex-col items-center justify-center"
     >
-      <h1 id="hobbies" className="text-4xl font-bold">
-        Hobbies
-      </h1>
+      <div className="wrapper">
+        {Array.from({ length: 8 }).map((_, i, arr) => (
+          <div
+            key={i}
+            className="itemLeft itemTests"
+            style={
+              { "--n": i + 1, "--count": arr.length } as React.CSSProperties
+            }
+          ></div>
+        ))}
+      </div>
+      <div className="wrapper">
+        {Array.from({ length: 8 }).map((_, i, arr) => (
+          <div
+            key={i}
+            className="itemRight itemTests"
+            style={
+              { "--n": i + 1, "--count": arr.length } as React.CSSProperties
+            }
+          ></div>
+        ))}
+      </div>
+      <div className="wrapper">
+        {Array.from({ length: 8 }).map((_, i, arr) => (
+          <div
+            key={i}
+            className="itemLeft itemTests"
+            style={
+              { "--n": i + 1, "--count": arr.length } as React.CSSProperties
+            }
+          ></div>
+        ))}
+      </div>
     </div>
   );
 };
