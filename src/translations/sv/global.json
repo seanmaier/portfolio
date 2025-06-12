@@ -35,19 +35,19 @@
     "hoermann-description": "Jag är för närvarande lärling som mjukvaruutvecklare hos Hörmann. Jag lär mig hur man utvecklar mjukvara i en professionell miljö och arbetar med olika teknologier och metoder. Automatisering och optimering av processer är centrala delar av mitt arbete. Första erfarenheter av ERP-system som SAP."
   },
   "experience": {
-    "title": "Technologien, mit denen ich Erfahrung habe:",
-    "databases": "Datenbanken",
-    "analytics": "Datenanalyse"
+    "title": "Teknologier jag har erfarenhet av:",
+    "databases": "Databaser",
+    "analytics": "Dataanalys"
   },
   "projects": {
-    "title": "Projekte",
-    "description": "Projekte, an denen ich gearbeitet habe:",
-    "check-out": "Ansehen",
-    "thouChat-description-1": "Eine Chat-Anwendung, die an einem Wochenende mit React, TypeScript und C# entwickelt wurde. Sie ermöglicht es Nutzern, Konten zu erstellen, Chat-Räumen beizutreten und Nachrichten in Echtzeit zu senden – mit einem besonderen Twist: Mit einem Klick können Nachrichten im Shakespeare-Stil verschickt werden.",
-    "thouChat-description-2": "Das war das erste Mal, dass ich mit Websockets gearbeitet und in einem größeren Team junger Entwickler zusammengearbeitet habe. Ich habe auch gelernt, wie man seine Arbeit vor einem größeren Publikum präsentiert und die Funktionen demonstriert.",
-    "macroForge-description-1": "MacroForge ist ein Makro-Recorder und -Editor für Windows, entwickelt mit C# und WPF. Nutzer können Maus- und Tastatureingaben aufzeichnen und später abspielen. Das Projekt war eine großartige Gelegenheit, mehr über die Windows-API, Ereignisbehandlung und UI-Design zu lernen.",
-    "macroForge-description-2": "Ich habe gelernt, mit der Windows-API zu arbeiten, um Maus- und Tastaturereignisse zu erfassen, sowie ein benutzerfreundliches Interface mit WPF zu erstellen. Das Projekt hat mir auch die Bedeutung von Testing und Debugging in der Softwareentwicklung gezeigt.",
-    "skatfreunde-description-1": "Skatfreunde Jöllenbeck ist eine Website, die mit React, TypeScript und C# entwickelt wurde. Sie dient als Plattform für den lokalen Skat-Club zur Verwaltung von Mitgliedern, Veranstaltungen und Punkten. Das Projekt war eine tolle Gelegenheit, Fullstack-Entwicklung und den Aufbau einer Webanwendung von Grund auf zu lernen.",
-    "skatfreunde-description-2": "Ich habe gelernt, mit REST-APIs zu arbeiten, State-Management in React zu handhaben und wie man eine Webanwendung mit Node.js deployt. Das Projekt hat mir auch die Bedeutung von User Experience und responsivem Design nähergebracht."
+    "title": "Projekt",
+    "description": "Projekt jag har arbetat med:",
+    "check-out": "Kolla in",
+    "thouChat-description-1": "En chattapplikation byggd med React, TypeScript och C# under en helg. Den låter användare skapa konton, gå med i chattrum och skicka meddelanden i realtid – med en twist. Med en knapptryckning kan användaren skicka sina meddelanden i shakespeariansk stil.",
+    "thouChat-description-2": "Detta var första gången jag arbetade med webbsockets och i ett större team av unga utvecklare. Jag lärde mig också hur man presenterar sitt arbete för en större publik och visar upp dess funktioner.",
+    "macroForge-description-1": "MacroForge är en makroinspelare och redigerare för Windows, byggd med C# och WPF. Den låter användare spela in sina mus- och tangentbordsåtgärder och spela upp dem senare. Projektet var ett utmärkt tillfälle att lära sig om Windows API, händelsehantering och användargränssnittsdesign.",
+    "macroForge-description-2": "Jag lärde mig att arbeta med Windows API för att fånga mus- och tangentbordshändelser, samt hur man skapar ett användarvänligt gränssnitt med WPF. Projektet lärde mig också vikten av testning och felsökning i mjukvaruutveckling.",
+    "skatfreunde-description-1": "Skatfreunde Jöllenbeck är en webbplats byggd med React, TypeScript och C#. Den fungerar som en plattform för den lokala Skat-klubben att hantera sina medlemmar, evenemang och poäng. Projektet var ett utmärkt tillfälle att lära sig om fullstackutveckling och hur man bygger en webbapplikation från grunden.",
+    "skatfreunde-description-2": "Jag lärde mig att arbeta med REST API:er, hantera tillstånd i React och hur man distribuerar en webbapplikation med Node.js. Projektet lärde mig också vikten av användarupplevelse och hur man skapar en responsiv design."
   }
 }
