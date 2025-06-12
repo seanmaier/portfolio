@@ -4,7 +4,7 @@ import { IoMailOutline } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
-  const [t] = useTranslation("global");
+  const [t] = useTranslation("global", { keyPrefix: "about" });
 
   return (
     <div className="bg-creme w-screen items-center justify-center p-15 lg:flex-col">
@@ -13,9 +13,9 @@ const AboutMe = () => {
           id="resume"
           className="text-[clamp(2.5rem,5vw,4rem)] font-bold italic"
         >
-          {t("about.title")}
+          {t("title")}
         </h2>
-        <p>{t("about.description")}</p>
+        <p>{t("description")}</p>
         <Button
           variant="tertiary"
           onClick={() =>
@@ -37,7 +37,7 @@ const AboutMe = () => {
         </div>
         <div className="bg-black p-5">
           <h6 className="font-jetbrains mb-3 text-3xl text-white italic">
-            {t("about.contact")}
+            {t("contact")}
           </h6>
           <div
             onClick={() =>
