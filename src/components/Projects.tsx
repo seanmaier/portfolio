@@ -2,20 +2,21 @@ import thouChat from "../assets/thouchat-logo.png";
 import macroForge from "../assets/macro-forge.png";
 import skat from "../assets/skatspieler.png";
 import Badge from "./Badge";
+import { ProjectCard } from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="bg-primary-500 relative flex w-screen flex-col items-center justify-center gap-5 p-10 lg:px-[10%] md:lg:px-[5%]">
-      <h1 id="work" className="text-4xl font-bold text-white">
+    <div className="bg-primary-500 flex flex-col items-center gap-20 py-20 lg:px-30 xl:px-70">
+      <h1
+        id="work"
+        className="font-jetbrains text-6xl font-bold text-white italic lg:text-8xl"
+      >
         Projects
       </h1>
-      <div className="flex flex-col justify-evenly lg:flex-row lg:gap-10">
-        <div className="from-secondary-200 to-secondary-900 mt-8 flex max-w-4xl flex-col rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black">
-          <h2 className="font-jetbrains text-2xl font-bold text-white">
-            ThouChat - Hackathon
-          </h2>
+      <div className="flex flex-col justify-center gap-10 lg:flex-row lg:flex-wrap">
+        <ProjectCard title="ThouChat - Hackathon">
           <img
-            className="shadow- m-10 rounded-2xl bg-white shadow-lg shadow-gray-800"
+            className="m-10 rounded-2xl bg-white shadow-lg shadow-gray-800"
             src={thouChat}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
@@ -35,9 +36,8 @@ const Projects = () => {
             <Badge>C#</Badge>
             <Badge>WebSockets</Badge>
           </div>
-        </div>
-        <div className="from-secondary-200 to-secondary-900 mt-8 flex max-w-4xl flex-col rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black">
-          <h2 className="text-4xl font-bold text-white">MacroForge</h2>
+        </ProjectCard>
+        <ProjectCard title="MacroForge">
           <img
             className="shadow- m-10 rounded-2xl shadow-lg shadow-gray-800"
             src={macroForge}
@@ -59,11 +59,8 @@ const Projects = () => {
             <Badge>Windows API</Badge>
             <Badge>Event Handling</Badge>
           </div>
-        </div>
-        <div className="from-secondary-200 to-secondary-900 mt-8 flex max-w-4xl flex-col rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black">
-          <h2 className="text-4xl font-bold text-white">
-            Skatfreunde Jöllenbeck
-          </h2>
+        </ProjectCard>
+        <ProjectCard title={"Skatfreunde Jöllenbeck"}>
           <img
             className="shadow- bg-creme m-10 rounded-2xl shadow-lg shadow-gray-800"
             src={skat}
@@ -90,11 +87,8 @@ const Projects = () => {
             <Badge>EF Core</Badge>
             <Badge>REST API</Badge>
           </div>
-        </div>
-        <div className="from-secondary-200 to-secondary-900 mt-8 flex max-w-4xl flex-col rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black">
-          <h2 className="text-4xl font-bold text-white">
-            Skatfreunde Jöllenbeck
-          </h2>
+        </ProjectCard>
+        <ProjectCard title="Skatfreunde Jöllenbeck">
           <img
             className="shadow- bg-creme m-10 rounded-2xl shadow-lg shadow-gray-800"
             src={skat}
@@ -121,7 +115,7 @@ const Projects = () => {
             <Badge>EF Core</Badge>
             <Badge>REST API</Badge>
           </div>
-        </div>
+        </ProjectCard>
       </div>
     </div>
   );
