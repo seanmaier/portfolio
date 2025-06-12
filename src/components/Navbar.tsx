@@ -85,13 +85,13 @@ const Navbar = () => {
         >
           {t("navbar.contact")}
         </Button>
-        <select onChange={changeLanguage} id="lang-select">
+        <select
+          onChange={changeLanguage}
+          value={i18n.language}
+          id="lang-select"
+        >
           {languageOptions.map((lang) => (
-            <option
-              key={lang.code}
-              value={lang.code}
-              selected={i18n.language === lang.code}
-            >
+            <option key={lang.code} value={lang.code}>
               {lang.flag}
             </option>
           ))}

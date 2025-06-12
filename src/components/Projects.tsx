@@ -3,32 +3,38 @@ import macroForge from "../assets/macro-forge.png";
 import skat from "../assets/skatspieler.png";
 import Badge from "./Badge";
 import { ProjectCard } from "./ProjectCard";
+import { Trans, useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const [t] = useTranslation("global", { keyPrefix: "projects" });
+
   return (
-    <div className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-70">
-      <h1
-        id="work"
-        className="font-jetbrains text-6xl font-bold text-white italic lg:text-8xl"
-      >
-        Projects
-      </h1>
+    <div className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-90">
+      <div className="flex flex-col items-center gap-5">
+        <h1
+          id="work"
+          className="font-jetbrains text-6xl font-bold text-white italic lg:text-8xl"
+        >
+          {t("title")}
+        </h1>
+        <p className="text-2xl text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+          {t("description")}
+        </p>
+      </div>
       <div className="flex flex-col justify-center gap-10 lg:flex-row lg:flex-wrap">
-        <ProjectCard title="ThouChat - Hackathon">
+        <ProjectCard
+          link="https://github.com/lukaslangrock/backend-chan"
+          title="ThouChat - Hackathon"
+        >
           <img
-            className="m-10 rounded-2xl bg-white shadow-lg shadow-gray-800"
+            className="m-10 rounded-2xl shadow-lg shadow-gray-800"
             src={thouChat}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            A chat application built with React, TypeScript and C# over a
-            weekend. It allows users to create accounts, join chat rooms, and
-            send messages in real-time with a catch. Via a switch the user sends
-            his messages in a shakespearean style.
+            {t("thouChat-description-1")}
             <br />
             <br />
-            This was my first time working with web-sockets and working with a
-            larger team of young devs. I learned aswell to present my work to a
-            larger audience and illustrate its features.
+            {t("thouChat-description-2")}
           </p>
           <div className="mt-5 flex flex-wrap gap-1">
             <Badge>React</Badge>
@@ -37,21 +43,18 @@ const Projects = () => {
             <Badge>WebSockets</Badge>
           </div>
         </ProjectCard>
-        <ProjectCard title="MacroForge">
+        <ProjectCard
+          link="https://github.com/seanmaier/macro-forge"
+          title="MacroForge"
+        >
           <img
             className="shadow- m-10 rounded-2xl shadow-lg shadow-gray-800"
             src={macroForge}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            MacroForge is a macro recorder and editor for Windows, built with C#
-            and WPF. It allows users to record their mouse and keyboard actions
-            and replay them later. The project was a great opportunity to learn
-            about Windows API, event handling, and user interface design.
+            {t("macroForge-description-1")}
             <br />
-            <br />I learned how to work with the Windows API to capture mouse
-            and keyboard events, as well as how to create a user-friendly
-            interface using WPF. The project also taught me about the importance
-            of testing and debugging in software development.
+            <br /> {t("macroForge-description-2")}
           </p>
           <div className="mt-5 flex flex-wrap gap-1">
             <Badge>C#</Badge>
@@ -60,50 +63,15 @@ const Projects = () => {
             <Badge>Event Handling</Badge>
           </div>
         </ProjectCard>
-        <ProjectCard title={"Skatfreunde Jöllenbeck"}>
+        <ProjectCard disabled title={"Skatfreunde Jöllenbeck"}>
           <img
-            className="shadow- bg-creme m-10 rounded-2xl shadow-lg shadow-gray-800"
+            className="bg-creme m-10 rounded-2xl p-5 shadow-lg shadow-gray-800"
             src={skat}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            Skatfreunde Jöllenbeck is a website built with React, TypeScript,
-            and C#. It serves as a platform for the local Skat club to manage
-            their members, events, and scores. The project was a great
-            opportunity to learn about full-stack development and how to build a
-            web application from scratch.
+            {t("skatfreunde-description-1")}
             <br />
-            <br />I learned how to work with REST APIs, manage state in React,
-            and how to deploy a web application using Node.js. The project also
-            taught me about the importance of user experience and how to create
-            a responsive design.
-          </p>
-          <div className="mt-5 flex flex-wrap gap-1">
-            <Badge>React</Badge>
-            <Badge>React-Router</Badge>
-            <Badge>React-Forms</Badge>
-            <Badge>Zod</Badge>
-            <Badge>TypeScript</Badge>
-            <Badge>C#</Badge>
-            <Badge>EF Core</Badge>
-            <Badge>REST API</Badge>
-          </div>
-        </ProjectCard>
-        <ProjectCard title="Skatfreunde Jöllenbeck">
-          <img
-            className="shadow- bg-creme m-10 rounded-2xl shadow-lg shadow-gray-800"
-            src={skat}
-          />
-          <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            Skatfreunde Jöllenbeck is a website built with React, TypeScript,
-            and C#. It serves as a platform for the local Skat club to manage
-            their members, events, and scores. The project was a great
-            opportunity to learn about full-stack development and how to build a
-            web application from scratch.
-            <br />
-            <br />I learned how to work with REST APIs, manage state in React,
-            and how to deploy a web application using Node.js. The project also
-            taught me about the importance of user experience and how to create
-            a responsive design.
+            <br /> {t("skatfreunde-description-2")}
           </p>
           <div className="mt-5 flex flex-wrap gap-1">
             <Badge>React</Badge>
