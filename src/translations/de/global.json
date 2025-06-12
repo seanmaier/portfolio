@@ -1,7 +1,8 @@
 {
   "navbar": {
     "about": "Über mich",
-    "resume": "Lebenslauf",
+    "career": "Karriere",
+    "erfahrung": "Erfahrung",
     "projects": "Projekte",
     "contact": "Kontakt"
   },

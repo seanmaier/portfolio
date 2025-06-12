@@ -1,7 +1,8 @@
 {
   "navbar": {
-    "about": "Om mig",
-    "resume": "CV",
+    "about": "Över mig",
+    "career": "Karriär",
+    "experience": "Erfarenhet",
     "projects": "Projekt",
     "contact": "Kontakt"
   },

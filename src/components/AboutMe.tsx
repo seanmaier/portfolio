@@ -9,12 +9,12 @@ const AboutMe = () => {
   const [t] = useTranslation("global", { keyPrefix: "about" });
 
   return (
-    <div className="bg-creme flex w-screen flex-col items-center justify-center gap-10 p-5 py-30 md:justify-evenly md:px-30 lg:flex-row">
+    <div
+      id="about"
+      className="bg-creme flex w-screen flex-col items-center justify-center gap-10 p-5 py-30 md:justify-evenly md:px-30 lg:flex-row"
+    >
       <div className="flex max-w-lg flex-col gap-8 p-5">
-        <h2
-          id="resume"
-          className="text-[clamp(2.5rem,7vw,6rem)] font-bold italic"
-        >
+        <h2 className="text-[clamp(2.5rem,7vw,6rem)] font-bold italic">
           {t("title")}
         </h2>
         <p className="text-[clamp(10px,20px,40px)] md:max-w-md">
