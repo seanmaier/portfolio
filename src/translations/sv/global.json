@@ -43,11 +43,20 @@
     "title": "Projekt",
     "description": "Projekt jag har arbetat med:",
     "check-out": "Kolla in",
+    "not-published": "Inte publicerat än",
     "thouChat-description-1": "En chattapplikation byggd med React, TypeScript och C# under en helg. Den låter användare skapa konton, gå med i chattrum och skicka meddelanden i realtid – med en twist. Med en knapptryckning kan användaren skicka sina meddelanden i shakespeariansk stil.",
     "thouChat-description-2": "Detta var första gången jag arbetade med webbsockets och i ett större team av unga utvecklare. Jag lärde mig också hur man presenterar sitt arbete för en större publik och visar upp dess funktioner.",
     "macroForge-description-1": "MacroForge är en makroinspelare och redigerare för Windows, byggd med C# och WPF. Den låter användare spela in sina mus- och tangentbordsåtgärder och spela upp dem senare. Projektet var ett utmärkt tillfälle att lära sig om Windows API, händelsehantering och användargränssnittsdesign.",
     "macroForge-description-2": "Jag lärde mig att arbeta med Windows API för att fånga mus- och tangentbordshändelser, samt hur man skapar ett användarvänligt gränssnitt med WPF. Projektet lärde mig också vikten av testning och felsökning i mjukvaruutveckling.",
     "skatfreunde-description-1": "Skatfreunde Jöllenbeck är en webbplats byggd med React, TypeScript och C#. Den fungerar som en plattform för den lokala Skat-klubben att hantera sina medlemmar, evenemang och poäng. Projektet var ett utmärkt tillfälle att lära sig om fullstackutveckling och hur man bygger en webbapplikation från grunden.",
     "skatfreunde-description-2": "Jag lärde mig att arbeta med REST API:er, hantera tillstånd i React och hur man distribuerar en webbapplikation med Node.js. Projektet lärde mig också vikten av användarupplevelse och hur man skapar en responsiv design."
+  },
+  "footer": {
+    "rights": "Alla rättigheter reserverade.",
+    "question": "HAR DU ETT PROJEKT I ÅTANKAR?",
+    "talk": "LÅT OSS PRATA!",
+    "back-to-top": "Tillbaka till toppen",
+    "made-with": "Skapad med",
+    "by": "av Sean"
   }
 }

@@ -3,17 +3,20 @@ import { FaArrowUp } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const [t] = useTranslation("global", { keyPrefix: "footer" });
+
   return (
     <footer>
       <div className="bg-primary-900 text- flex flex-col gap-15 px-10 py-20 md:px-30">
         <div className="flex items-center justify-between gap-4">
           <p className="text-sm text-white">
-            © {new Date().getFullYear()} - All rights reserved.
+            © {new Date().getFullYear()} - {t("rights")}
           </p>
           <div className="flex items-center gap-4">
-            <p className="text-white">Back to top</p>
+            <p className="text-white">{t("back-to-top")}</p>
             <Button
               variant="ghost"
               rounded="full"
@@ -25,9 +28,9 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col">
-          <p className="mb-2 text-white">HAVE A PROJECT IN MIND?</p>
+          <p className="mb-2 text-white">{t("question")}</p>
           <p className="text-[60px] leading-none text-gray-200 md:text-[150px]">
-            LET'S TALK
+            {t("talk")}
           </p>
         </div>
 
@@ -64,7 +67,9 @@ const Footer = () => {
               E-Mail
             </Button>
           </div>
-          <p className="text-white">Made with ❤️ by Sean</p>
+          <p className="text-white">
+            {t("made-with")} ❤️ {t("by")}
+          </p>
         </div>
       </div>
     </footer>
