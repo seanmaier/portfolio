@@ -33,5 +33,21 @@
     "hoermann-title": "Auszubildender Software Engineering bei",
     "hoermann-date": "Aug. 2023 - Gegenwart",
     "hoermann-description": "Derzeit in meiner Ausbildung als Softwareentwickler bei Hörmann. Ich lerne, wie man Software in einem professionellen Umfeld entwickelt und arbeite mit verschiedenen Technologien und Methoden. Automatisierung und Optimierung von Prozessen sind zentrale Aspekte meiner Tätigkeit. Erste Erfahrungen mit ERP-Systemen wie SAP."
+  },
+  "experience": {
+    "title": "Technologien, mit denen ich Erfahrung habe:",
+    "databases": "Datenbanken",
+    "analytics": "Datenanalyse"
+  },
+  "projects": {
+    "title": "Projekte",
+    "description": "Projekte, an denen ich gearbeitet habe:",
+    "check-out": "Ansehen",
+    "thouChat-description-1": "Eine Chat-Anwendung, die an einem Wochenende mit React, TypeScript und C# entwickelt wurde. Sie ermöglicht es Nutzern, Konten zu erstellen, Chat-Räumen beizutreten und Nachrichten in Echtzeit zu senden – mit einem besonderen Twist: Mit einem Klick können Nachrichten im Shakespeare-Stil verschickt werden.",
+    "thouChat-description-2": "Das war das erste Mal, dass ich mit Websockets gearbeitet und in einem größeren Team junger Entwickler zusammengearbeitet habe. Ich habe auch gelernt, wie man seine Arbeit vor einem größeren Publikum präsentiert und die Funktionen demonstriert.",
+    "macroForge-description-1": "MacroForge ist ein Makro-Recorder und -Editor für Windows, entwickelt mit C# und WPF. Nutzer können Maus- und Tastatureingaben aufzeichnen und später abspielen. Das Projekt war eine großartige Gelegenheit, mehr über die Windows-API, Ereignisbehandlung und UI-Design zu lernen.",
+    "macroForge-description-2": "Ich habe gelernt, mit der Windows-API zu arbeiten, um Maus- und Tastaturereignisse zu erfassen, sowie ein benutzerfreundliches Interface mit WPF zu erstellen. Das Projekt hat mir auch die Bedeutung von Testing und Debugging in der Softwareentwicklung gezeigt.",
+    "skatfreunde-description-1": "Skatfreunde Jöllenbeck ist eine Website, die mit React, TypeScript und C# entwickelt wurde. Sie dient als Plattform für den lokalen Skat-Club zur Verwaltung von Mitgliedern, Veranstaltungen und Punkten. Das Projekt war eine tolle Gelegenheit, Fullstack-Entwicklung und den Aufbau einer Webanwendung von Grund auf zu lernen.",
+    "skatfreunde-description-2": "Ich habe gelernt, mit REST-APIs zu arbeiten, State-Management in React zu handhaben und wie man eine Webanwendung mit Node.js deployt. Das Projekt hat mir auch die Bedeutung von User Experience und responsivem Design nähergebracht."
   }
 }
