@@ -99,8 +99,8 @@
   /* background-color: var(--color-creme); */
   background-image: linear-gradient(
     to right,
-    var(--color-secondary-500),
-    var(--color-secondary-900)
+    var(--color-secondary-900),
+    var(--color-secondary-400)
   );
   box-shadow: 1px 1px 25px #000;
   border-radius: 10px;

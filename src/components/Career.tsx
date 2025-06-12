@@ -71,7 +71,12 @@ const Career = () => {
             </h2>
             <span className="date">{t("pit_2024-date")}</span>
             <span className="circle"></span>
-            <p className="text-md">{t("pit_2024-description")}</p>
+            <p className="text-md">
+              {t("pit_2024-description-1")}
+              <br />
+              <br />
+              {t("pit_2024-description-2")}
+            </p>
           </li>
           <li>
             <h2 className="text-2xl font-bold">
@@ -91,7 +96,12 @@ const Career = () => {
             </h2>
             <span className="date">{t("bib-date")}</span>
             <span className="circle"></span>
-            <p className="text-md">{t("bib-description")}</p>
+            <p className="text-md">
+              {t("bib-description-1")}
+              <br />
+              <br />
+              {t("bib-description-2")}
+            </p>
           </li>
           <li>
             <h2 className="text-2xl font-bold">
@@ -111,7 +121,12 @@ const Career = () => {
             </h2>
             <span className="date">{t("hoermann-date")}</span>
             <span className="circle"></span>
-            <p className="text-md">{t("hoermann-description")}</p>
+            <p className="text-md">
+              {t("hoermann-description-1")}
+              <br />
+              <br />
+              {t("hoermann-description-2")}
+            </p>
           </li>
         </ul>
       </div>

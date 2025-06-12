@@ -26,13 +26,16 @@
     "staatsanwaltschaft-description": "Bei der Staatsanwaltschaft habe ich gelernt, wie wichtig präzise Formulierungen sind. Meine erste Erfahrungen mit juristischen Dokumenten und deren Erstellung.",
     "pit_2024-title": "Hackathon bei",
     "pit_2024-date": "Sept. 2024",
-    "pit_2024-description": "Ich habe an einem Hackathon teilgenommen, der von PIT (Paderborn ist Informatik) organisiert wurde. Die Veranstaltung konzentrierte sich auf die Entwicklung innovativer Lösungen für reale Probleme. Ich habe mit anderen Teilnehmern zusammengearbeitet, um an einem Wochenende eine Softwarelösung für eine konkrete Herausforderung zu entwickeln. Diese Erfahrung hat meine Problemlösungsfähigkeiten verbessert und mir ermöglicht, mein Wissen praktisch anzuwenden.",
-    "bib-title": "Student für Software Engineering am",
+    "pit_2024-description-1": "Ich habe an einem Hackathon teilgenommen, der von PIT (Paderborn ist Informatik) organisiert wurde. Die Veranstaltung konzentrierte sich auf die Entwicklung innovativer Lösungen für reale Probleme.",
+    "pit_2024-description-2": "Ich habe mit anderen Teilnehmern zusammengearbeitet, um an einem Wochenende eine Softwarelösung für eine spezifische Herausforderung zu entwickeln. Diese Erfahrung hat meine Problemlösungsfähigkeiten verbessert und mir ermöglicht, mein Wissen praktisch anzuwenden.",
+    "bib-title": "Studierender in der Softwareentwicklung am",
     "bib-date": "Aug. 2023 - Gegenwart",
-    "bib-description": "Derzeit im Studiengang Software Engineering am b.i.b. International College eingeschrieben. Das Programm legt den Fokus auf praktische Anwendungen der Softwareentwicklung, einschließlich Programmierung, Projektmanagement und Teamarbeit. Ich erwerbe wertvolle Fähigkeiten und Kenntnisse, die mich auf eine erfolgreiche Karriere in der Softwarebranche vorbereiten. Auszubildender Software Engineering bei Hörmann",
-    "hoermann-title": "Auszubildender Software Engineering bei",
+    "bib-description-1": "Derzeit eingeschrieben in einem Softwareentwicklungsprogramm am b.i.b. International College. Das Programm legt den Fokus auf praktische Anwendungen der Softwareentwicklung, einschließlich Programmierung, Projektmanagement und Teamarbeit.",
+    "bib-description-2": "Ich erwerbe wertvolle Fähigkeiten und Kenntnisse, die mich auf eine erfolgreiche Karriere in der Softwarebranche vorbereiten. Ausbildung in der Softwareentwicklung bei Hörmann.",
+    "hoermann-title": "Auszubildender in der Softwareentwicklung bei",
     "hoermann-date": "Aug. 2023 - Gegenwart",
-    "hoermann-description": "Derzeit in meiner Ausbildung als Softwareentwickler bei Hörmann. Ich lerne, wie man Software in einem professionellen Umfeld entwickelt und arbeite mit verschiedenen Technologien und Methoden. Automatisierung und Optimierung von Prozessen sind zentrale Aspekte meiner Tätigkeit. Erste Erfahrungen mit ERP-Systemen wie SAP."
+    "hoermann-description-1": "Ich bin derzeit Auszubildender als Softwareentwickler bei Hörmann. Ich lerne, Software in einem professionellen Umfeld zu entwickeln und arbeite mit verschiedenen Technologien und Methoden.",
+    "hoermann-description-2": "Automatisierung und Optimierung von Prozessen sind zentrale Bestandteile meiner Arbeit. Ich habe auch erste Erfahrungen mit ERP-Systemen wie SAP gesammelt."
   },
   "experience": {
     "title": "Technologien, mit denen ich Erfahrung habe:",
@@ -44,7 +47,7 @@
     "description": "Projekte, an denen ich gearbeitet habe:",
     "check-out": "Ansehen",
     "not-published": "Noch nicht veröffentlicht",
-    "thouChat-description-1": "Eine Chat-Anwendung, die an einem Wochenende mit React, TypeScript und C# entwickelt wurde. Sie ermöglicht es Nutzern, Konten zu erstellen, Chat-Räumen beizutreten und Nachrichten in Echtzeit zu senden – mit einem besonderen Twist: Mit einem Klick können Nachrichten im Shakespeare-Stil verschickt werden.",
+    "thouChat-description-1": "Eine Chat-Anwendung, die an einem Wochenende mit React, TypeScript und C# entwickelt wurde. Sie ermöglicht es Nutzern, Konten zu erstellen, Chat-Räumen beizutreten und Nachrichten in Echtzeit zu senden - mit einem besonderen Twist: Mit einem Klick können Nachrichten im Shakespeare-Stil verschickt werden.",
     "thouChat-description-2": "Das war das erste Mal, dass ich mit Websockets gearbeitet und in einem größeren Team junger Entwickler zusammengearbeitet habe. Ich habe auch gelernt, wie man seine Arbeit vor einem größeren Publikum präsentiert und die Funktionen demonstriert.",
     "macroForge-description-1": "MacroForge ist ein Makro-Recorder und -Editor für Windows, entwickelt mit C# und WPF. Nutzer können Maus- und Tastatureingaben aufzeichnen und später abspielen. Das Projekt war eine großartige Gelegenheit, mehr über die Windows-API, Ereignisbehandlung und UI-Design zu lernen.",
     "macroForge-description-2": "Ich habe gelernt, mit der Windows-API zu arbeiten, um Maus- und Tastaturereignisse zu erfassen, sowie ein benutzerfreundliches Interface mit WPF zu erstellen. Das Projekt hat mir auch die Bedeutung von Testing und Debugging in der Softwareentwicklung gezeigt.",
@@ -54,7 +57,6 @@
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
     "question": "HABEN SIE EIN PROJEKT IM KOPF?",
-    "talk": "LASSEN SIE UNS REDEN!",
     "back-to-top": "Zurück nach oben",
     "made-with": "Erstellt mit",
     "by": "von Sean"
