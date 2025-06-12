@@ -6,7 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="bg-primary-500 flex flex-col items-center gap-20 py-20 lg:px-30 xl:px-70">
+    <div className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-70">
       <h1
         id="work"
         className="font-jetbrains text-6xl font-bold text-white italic lg:text-8xl"
