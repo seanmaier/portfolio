@@ -1,7 +1,8 @@
 {
   "navbar": {
     "about": "About Me",
-    "resume": "Resume",
+    "career": "Career",
+    "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact Me!"
   },
@@ -26,13 +27,16 @@
     "staatsanwaltschaft-description": "At the public prosecutor's office i learned how important precise wording is. First experience with legal documents and how to write those.",
     "pit_2024-title": "Hackathon at",
     "pit_2024-date": "Sept. 2024",
-    "pit_2024-description": "I participated in a hackathon organized by PIT (Paderborn ist Informatik). The event focused on developing innovative solutions for real-world problems. I collaborated with other participants to create a software solution that addressed a specific challenge on a weekend. This experience enhanced my problem-solving skills and allowed me to apply my knowledge in a practical setting. Student for software Engineering at bib Internation College",
+    "pit_2024-description-1": "I participated in a hackathon organized by PIT (Paderborn ist Informatik). The event focused on developing innovative solutions for real-world problems.",
+    "pit_2024-description-2": "I collaborated with other participants to develop a software solution for a specific challenge over a weekend. This experience improved my problem-solving skills and allowed me to apply my knowledge in a practical setting.",
     "bib-title": "Student for software Engineering at",
     "bib-date": "Aug. 2023 - Present",
-    "bib-description": "Currently enrolled in a software engineering program at b.i.b. International College. The program focuses on practical applications of software development, including programming, project management, and teamwork. I am gaining valuable skills and knowledge that will prepare me for a successful career in the software industry. Apprentice Software Engineering at HörmannHoermann logo",
+    "bib-description-1": "Currently enrolled in a software engineering program at b.i.b. International College. The program focuses on practical applications of software development, including programming, project management, and teamwork.",
+    "bib-description-2": "I am gaining valuable skills and knowledge that will prepare me for a successful career in the software industry. Apprentice Software Engineering at Hörmann.",
     "hoermann-title": "Apprentice Software Engineering at",
     "hoermann-date": "Aug. 2023 - Present",
-    "hoermann-description": "Currently in my apprenticeship as a software engineer at Hörmann. I am learning how to develop software in a professional environment, working with various technologies and methodologies. Automation and optimization of processes are key aspects of my role. First experience with working with ERP Systems like SAP."
+    "hoermann-description-1": "Currently in my apprenticeship as a software engineer at Hörmann. I am learning how to develop software in a professional environment, working with various technologies and methodologies.",
+    "hoermann-description-2": "Automation and optimization of processes are central aspects of my work. I have also gained first experiences with ERP systems like SAP."
   },
   "experience": {
     "title": "The technologies I have experience with:",
@@ -43,11 +47,20 @@
     "title": "Projects",
     "description": "Projects I have worked on:",
     "check-out": "Check out",
+    "not-published": "Not published yet",
     "thouChat-description-1": "A chat application built with React, TypeScript and C# over a weekend. It allows users to create accounts, join chat rooms, and send messages in real-time with a catch. Via a switch the user sends his messages in a shakespearean style.",
     "thouChat-description-2": "This was my first time working with web sockets and in a larger team of young developers. I also learned how to present my work to a larger audience and showcase its features.",
     "macroForge-description-1": "MacroForge is a macro recorder and editor for Windows, built with C# and WPF. It allows users to record their mouse and keyboard actions and replay them later. The project was a great opportunity to learn about Windows API, event handling, and user interface design.",
     "macroForge-description-2": "I learned how to work with the Windows API to capture mouse and keyboard events, as well as how to create a user-friendly interface using WPF. The project also taught me about the importance of testing and debugging in software development.",
     "skatfreunde-description-1": "Skatfreunde Jöllenbeck is a website built with React, TypeScript, and C#. It serves as a platform for the local Skat club to manage their members, events, and scores. The project was a great opportunity to learn about full-stack development and how to build a web application from scratch.",
     "skatfreunde-description-2": "I learned how to work with REST APIs, manage state in React, and how to deploy a web application using Node.js. The project also taught me about the importance of user experience and how to create a responsive design."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "question": "HAVE A PROJECT IN MIND?",
+    "talk": "LET'S TALK!",
+    "back-to-top": "Back to top",
+    "made-with": "Made with",
+    "by": "by Sean"
   }
 }

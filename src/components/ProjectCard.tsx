@@ -22,7 +22,7 @@ export const ProjectCard = ({ children, title, disabled, link }: Props) => {
           disabled={disabled}
           variant="tertiary"
         >
-          {disabled ? "Not published yet" : t("check-out")}
+          {disabled ? t("not-published") : t("check-out")}
         </Button>
       </div>
     </div>

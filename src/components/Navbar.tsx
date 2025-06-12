@@ -15,7 +15,7 @@ const languageOptions: LanguageOption[] = [
 ];
 
 const Navbar = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t, i18n] = useTranslation("global", { keyPrefix: "navbar" });
 
   const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const language = e.target.value;
@@ -25,33 +25,49 @@ const Navbar = () => {
   return (
     <div className="navbar bg-primary-500 sticky top-0 z-100 flex h-16 items-center justify-between px-5 md:px-20">
       <div className="relative flex items-center gap-3">
-        <p className="text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-0.5 before:bg-white before:content-['']">
-          Sean Maier
-        </p>
+        <a
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="cursor-pointer"
+        >
+          <span className="text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-0.5 before:bg-white before:content-['']">
+            Sean Maier
+          </span>
+        </a>
       </div>
       <div className="flex gap-5">
-        <div className="hidden gap-3 sm:flex">
+        <div className="hidden gap-3 lg:flex">
           <Button
             size="sm"
             variant="text"
             onClick={() =>
               document
-                .getElementById("about-me")
+                .getElementById("about")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            {t("navbar.about")}
+            {t("about")}
           </Button>
           <Button
             size="sm"
             variant="text"
             onClick={() =>
               document
-                .getElementById("resume")
+                .getElementById("career")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            {t("navbar.resume")}
+            {t("career")}
+          </Button>
+          <Button
+            size="sm"
+            variant="text"
+            onClick={() =>
+              document
+                .getElementById("experience")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            {t("experience")}
           </Button>
           <Button
             size="sm"
@@ -62,7 +78,7 @@ const Navbar = () => {
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
-            {t("navbar.projects")}
+            {t("projects")}
           </Button>
           <Button
             size="sm"
@@ -83,7 +99,7 @@ const Navbar = () => {
             (window.location.href = "mailto:sean.maier@outlook.com")
           }
         >
-          {t("navbar.contact")}
+          {t("contact")}
         </Button>
         <select
           onChange={changeLanguage}
