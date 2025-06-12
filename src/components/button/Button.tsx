@@ -27,7 +27,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       fullWidth = false,
       loading = false,
       icon,
-      iconPosition = "left",
+      iconPosition,
       className,
       children,
       ...props
@@ -49,7 +49,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       text: "bg-transparent hover:bg-primary-100 hover:text-primary-700 text-gray-200 focus:ring-gray-500",
       danger: "bg-red-600 hover:bg-red-700 text-white focus:ring-red-500",
       ghost:
-        "bg-transparent hover:bg-gray-100 text-gray-700 focus:ring-gray-500 border border-gray-300",
+        "bg-transparent hover:bg-gray-100 hover:text-gray-700 text-gray-300 focus:ring-gray-500 border border-gray-300",
       link: "bg-transparent hover:underline text-blue-600 hover:text-blue-800 focus:ring-blue-500 p-0",
     };
 
@@ -95,11 +95,46 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {icon && iconPosition === "left" && (
-          <span className={`mr-2 ${loading ? "invisible" : ""}`}>{icon}</span>
+          <span
+            className={`mr-2 ${loading ? "invisible" : ""}`}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              height: "1em",
+              width: "1em",
+            }}
+          >
+            {icon}
+          </span>
         )}
         <span className={loading ? "invisible" : ""}>{children}</span>
         {icon && iconPosition === "right" && (
-          <span className={`ml-2 ${loading ? "invisible" : ""}`}>{icon}</span>
+          <span
+            className={`ml-2 ${loading ? "invisible" : ""}`}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              height: "1em",
+              width: "1em",
+            }}
+          >
+            {icon}
+          </span>
+        )}
+        {icon && iconPosition === undefined && (
+          <span
+            className={`inline-flex items-center justify-center ${
+              loading ? "invisible" : ""
+            }`}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              height: "2rem",
+              width: "1rem",
+            }}
+          >
+            {icon}
+          </span>
         )}
         {loading && (
           <span className="absolute">

@@ -1,6 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import Career from "./components/Career";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Hobbies from "./components/Hobbies";
 import Navbar from "./components/Navbar";
@@ -16,9 +17,7 @@ const App = () => {
       <Experience />
       <Projects />
       <Hobbies />
-      <div className="flex h-screen w-screen items-center justify-center">
-        <h1 className="text-4xl font-bold">Contact me</h1>
-      </div>
+      <Footer />
     </>
   );
 };
