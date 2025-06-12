@@ -2,6 +2,7 @@ import React from "react";
 import { twMerge } from "tailwind-merge";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  className?: string;
   variant?:
     | "primary"
     | "secondary"
@@ -84,6 +85,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       fullWidthClass,
       loadingClass,
       variant === "link" ? "" : "inline-flex items-center justify-center",
+      icon && children ? "gap-2" : "",
       className,
     );
 
@@ -130,7 +132,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               display: "inline-flex",
               alignItems: "center",
               height: "2rem",
-              width: "1rem",
+              width: "1.5rem",
             }}
           >
             {icon}
