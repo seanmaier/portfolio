@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-90"
+      className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-60"
     >
       <div className="flex flex-col items-center gap-5">
         <h1
@@ -29,9 +29,10 @@ const Projects = () => {
         <ProjectCard
           link="https://github.com/lukaslangrock/backend-chan"
           title="ThouChat - Hackathon"
+          badges={["React", "TypeScript", "C#", "WebSockets"]}
         >
           <img
-            className="m-10 rounded-2xl shadow-lg shadow-gray-800"
+            className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={thouChat}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
@@ -40,19 +41,15 @@ const Projects = () => {
             <br />
             {t("thouChat-description-2")}
           </p>
-          <div className="mt-5 flex flex-wrap gap-1">
-            <Badge>React</Badge>
-            <Badge>TypeScript</Badge>
-            <Badge>C#</Badge>
-            <Badge>WebSockets</Badge>
-          </div>
+          <div className="flex flex-wrap gap-1"></div>
         </ProjectCard>
         <ProjectCard
           link="https://github.com/seanmaier/macro-forge"
           title="MacroForge"
+          badges={["C#", "WPF", "Windows API", "Event Handling"]}
         >
           <img
-            className="shadow- m-10 rounded-2xl shadow-lg shadow-gray-800"
+            className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={macroForge}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
@@ -60,16 +57,23 @@ const Projects = () => {
             <br />
             <br /> {t("macroForge-description-2")}
           </p>
-          <div className="mt-5 flex flex-wrap gap-1">
-            <Badge>C#</Badge>
-            <Badge>WPF</Badge>
-            <Badge>Windows API</Badge>
-            <Badge>Event Handling</Badge>
-          </div>
         </ProjectCard>
-        <ProjectCard disabled title={"Skatfreunde Jöllenbeck"}>
+        <ProjectCard
+          disabled
+          title={"Skatfreunde Jöllenbeck"}
+          badges={[
+            "React",
+            "React-Router",
+            "React-Forms",
+            "Zod",
+            "TypeScript",
+            "C#",
+            "EF Core",
+            "REST API",
+          ]}
+        >
           <img
-            className="bg-creme m-10 rounded-2xl p-5 shadow-lg shadow-gray-800"
+            className="bg-creme w-80 rounded-2xl p-5 shadow-lg shadow-gray-800 outline-2"
             src={skat}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
@@ -77,31 +81,19 @@ const Projects = () => {
             <br />
             <br /> {t("skatfreunde-description-2")}
           </p>
-          <div className="mt-5 flex flex-wrap gap-1">
-            <Badge>React</Badge>
-            <Badge>React-Router</Badge>
-            <Badge>React-Forms</Badge>
-            <Badge>Zod</Badge>
-            <Badge>TypeScript</Badge>
-            <Badge>C#</Badge>
-            <Badge>EF Core</Badge>
-            <Badge>REST API</Badge>
-          </div>
         </ProjectCard>
-        <ProjectCard disabled title={"Portfolio Website"}>
+        <ProjectCard
+          disabled
+          title={"Portfolio Website"}
+          badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
+        >
           <img
-            className="m-10 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800"
+            className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
             src={portfolio}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             {t("portfolio-description")}
           </p>
-          <div className="mt-5 flex flex-wrap gap-1">
-            <Badge>React</Badge>
-            <Badge>TypeScript</Badge>
-            <Badge>Tailwind</Badge>
-            <Badge>Animations</Badge>
-          </div>
         </ProjectCard>
       </div>
     </div>
