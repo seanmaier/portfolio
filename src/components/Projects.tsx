@@ -2,6 +2,7 @@ import thouChat from "../assets/thouchat-logo.png";
 import macroForge from "../assets/macro-forge.png";
 import skat from "../assets/skatspieler.png";
 import Badge from "./Badge";
+import portfolio from "../assets/portfolio-logo.png";
 import { ProjectCard } from "./ProjectCard";
 import { useTranslation } from "react-i18next";
 
@@ -85,6 +86,21 @@ const Projects = () => {
             <Badge>C#</Badge>
             <Badge>EF Core</Badge>
             <Badge>REST API</Badge>
+          </div>
+        </ProjectCard>
+        <ProjectCard disabled title={"Portfolio Website"}>
+          <img
+            className="m-10 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800"
+            src={portfolio}
+          />
+          <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+            {t("portfolio-description")}
+          </p>
+          <div className="mt-5 flex flex-wrap gap-1">
+            <Badge>React</Badge>
+            <Badge>TypeScript</Badge>
+            <Badge>Tailwind</Badge>
+            <Badge>Animations</Badge>
           </div>
         </ProjectCard>
       </div>

@@ -54,7 +54,8 @@
     "macroForge-description-1": "MacroForge is a macro recorder and editor for Windows, built with C# and WPF. It allows users to record their mouse and keyboard actions and replay them later. The project was a great opportunity to learn about Windows API, event handling, and user interface design.",
     "macroForge-description-2": "I learned how to work with the Windows API to capture mouse and keyboard events, as well as how to create a user-friendly interface using WPF. The project also taught me about the importance of testing and debugging in software development.",
     "skatfreunde-description-1": "Skatfreunde Jöllenbeck is a website built with React, TypeScript, and C#. It serves as a platform for the local Skat club to manage their members, events, and scores. The project was a great opportunity to learn about full-stack development and how to build a web application from scratch.",
-    "skatfreunde-description-2": "I learned how to work with REST APIs, manage state in React, and how to deploy a web application using Node.js. The project also taught me about the importance of user experience and how to create a responsive design."
+    "skatfreunde-description-2": "I learned how to work with REST APIs, manage state in React, and how to deploy a web application using Node.js. The project also taught me about the importance of user experience and how to create a responsive design.",
+    "portfolio-description": "This portfolio website is built with React, TypeScript, and Tailwind CSS. It was a small just for fun project to showcase my skills and projects. It is fully responsive and works on all devices."
   },
   "footer": {
     "rights": "All rights reserved.",

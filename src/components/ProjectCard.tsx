@@ -13,7 +13,9 @@ export const ProjectCard = ({ children, title, disabled, link }: Props) => {
 
   return (
     <div className="from-tertiary-300 to-secondary-500 lg:max-w-1xl flex max-w-md flex-col gap-5 rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black">
-      <h2 className="font-jetbrains text-4xl font-bold text-white">{title}</h2>
+      <h2 className="font-jetbrains text-center text-4xl font-bold text-white">
+        {title}
+      </h2>
       {children}
       <div className="mt-auto">
         <Button
