@@ -5,7 +5,7 @@ const Career = () => {
 
   return (
     <div id="career" className="main bg-primary-500">
-      <h1 className="font-jetbrains relative mb-13 text-4xl text-[clamp(2.5rem,5vw,4rem)] font-bold text-white italic before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-white before:content-['']">
+      <h1 className="font-jetbrains relative mb-13 text-[clamp(3rem,8vw,6rem)] font-bold text-white italic before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-white before:content-['']">
         {t("title")}
       </h1>
       <div className="main container">

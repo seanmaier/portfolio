@@ -26,7 +26,7 @@ const AboutMe = () => {
           iconPosition="left"
           icon={<CiLinkedin className="" />}
           onClick={() =>
-            (window.location.href = "https://www.linkedin.com/in/maiersean/")
+            window.open("https://www.linkedin.com/in/maiersean/", "_blank")
           }
         >
           linkedin.com/in/maiersean
