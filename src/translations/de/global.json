@@ -40,6 +40,7 @@
   },
   "experience": {
     "title": "Technologien, mit denen ich Erfahrung habe:",
+    "compact": "Kompakte Ansicht",
     "databases": "Datenbanken",
     "analytics": "Datenanalyse"
   },
