@@ -426,3 +426,13 @@ ul li .date {
   height: 2em;
   bottom: 0;
 }
+
+::-moz-selection {
+  color: var(--color-creme);
+  background: var(--color-secondary-500);
+}
+
+::selection {
+  color: var(--color-creme);
+  background: var(--color-secondary-900);
+}
