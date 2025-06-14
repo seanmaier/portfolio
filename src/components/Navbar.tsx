@@ -100,18 +100,8 @@ const Navbar = () => {
         >
           {t("contact")}
         </Button>
-        {/* <select
-          onChange={changeLanguage}
-          value={i18n.language}
-          id="lang-select"
-        >
-          {languagemotion.Options.map((lang) => (
-            <motion.option key={lang.code} value={lang.code}>
-              {lang.flag}
-            </motion.option>
-          ))}
-        </select> */}
         <Select
+          className="bg-primary-600"
           placeholder="Select Language"
           onChange={(lang) => changeLanguage(lang)}
           size="sm"

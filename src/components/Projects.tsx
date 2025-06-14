@@ -1,10 +1,10 @@
 import thouChat from "../assets/thouchat-logo.png";
 import macroForge from "../assets/macro-forge.png";
 import skat from "../assets/skatspieler.png";
-import Badge from "./Badge";
 import portfolio from "../assets/portfolio-logo.png";
 import { ProjectCard } from "./ProjectCard";
 import { useTranslation } from "react-i18next";
+import { motion } from "motion/react";
 
 const Projects = () => {
   const [t] = useTranslation("global", { keyPrefix: "projects" });
@@ -31,7 +31,8 @@ const Projects = () => {
           title="ThouChat - Hackathon"
           badges={["React", "TypeScript", "C#", "WebSockets"]}
         >
-          <img
+          <motion.img
+            whileHover={{ rotate: 5 }}
             className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={thouChat}
           />
@@ -48,7 +49,8 @@ const Projects = () => {
           title="MacroForge"
           badges={["C#", "WPF", "Windows API", "Event Handling"]}
         >
-          <img
+          <motion.img
+            whileHover={{ rotate: 5 }}
             className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={macroForge}
           />
@@ -72,7 +74,8 @@ const Projects = () => {
             "REST API",
           ]}
         >
-          <img
+          <motion.img
+            whileHover={{ rotate: 5 }}
             className="bg-creme w-80 rounded-2xl p-5 shadow-lg shadow-gray-800 outline-2"
             src={skat}
           />
@@ -83,11 +86,12 @@ const Projects = () => {
           </p>
         </ProjectCard>
         <ProjectCard
-          disabled
+          noButton
           title={"Portfolio Website"}
           badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
         >
-          <img
+          <motion.img
+            whileHover={{ rotate: 5 }}
             className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
             src={portfolio}
           />

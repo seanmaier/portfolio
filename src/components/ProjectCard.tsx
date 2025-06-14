@@ -7,6 +7,7 @@ interface Props {
   title: string;
   children: React.ReactNode;
   disabled?: boolean;
+  noButton?: boolean;
   link?: string;
   badges?: string[];
 }
@@ -15,6 +16,7 @@ export const ProjectCard = ({
   children,
   title,
   disabled,
+  noButton = false,
   link,
   badges,
 }: Props) => {
@@ -40,14 +42,16 @@ export const ProjectCard = ({
               ))}
             </div>
           )}
-          <Button
-            onClick={() => window.open(link, "_blank")}
-            fullWidth
-            disabled={disabled}
-            variant="tertiary"
-          >
-            {disabled ? t("not-published") : t("check-out")}
-          </Button>
+          {!noButton && (
+            <Button
+              onClick={() => window.open(link, "_blank")}
+              fullWidth
+              disabled={disabled}
+              variant="tertiary"
+            >
+              {disabled ? t("not-published") : t("check-out")}
+            </Button>
+          )}
         </div>
       </div>
     </motion.div>
