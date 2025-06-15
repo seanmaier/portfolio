@@ -1,6 +1,7 @@
 import Button from "./button/Button";
 import { useTranslation } from "react-i18next";
 import { Select, type SelectOption } from "./Select";
+import FlipLink from "./FlipLink";
 
 const options: SelectOption[] = [
   { value: "en", label: "English", icon: "🇺🇲" },
@@ -16,14 +17,17 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-primary-500 sticky top-0 z-100 flex h-16 items-center justify-between px-5 md:px-20">
+    <div className="bg-primary-500 sticky top-0 z-50 flex h-16 items-center justify-between px-3 md:px-20">
       <div className="relative flex items-center gap-3">
         <a
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="cursor-pointer"
         >
-          <span className="text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-0.5 before:bg-white before:content-['']">
-            Sean Maier
+          <span className="text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-1 before:bg-white before:content-['']">
+            <FlipLink
+              children={"Sean Maier"}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            />
           </span>
         </a>
       </div>
@@ -92,8 +96,9 @@ const Navbar = () => {
         </div>
         <Button
           scale={1.2}
+          variant="dotted"
           size="sm"
-          className="ml-2"
+          className="bg-secondary-500 ml-2"
           onClick={() =>
             (window.location.href = "mailto:sean.maier@outlook.com")
           }

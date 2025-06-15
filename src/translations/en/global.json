@@ -14,7 +14,8 @@
   },
   "about": {
     "title": "Hello, I am Sean!",
-    "description": "I am a junior developer with a strong interest in software engineering. I am eager to learn new things, wether it is related to my job or something entirely else. If you want to cooperate don't hesistate to contact me!",
+    "description-1": "I am a junior developer with a strong interest in learning more about software engineering. I develop fullstack with focus on the backend.",
+    "description-2": "I am curious and love to learn new things, whether it is related to my profession or something completely different. If you want to collaborate, feel free to reach out!",
     "contact": "Contact"
   },
   "career": {

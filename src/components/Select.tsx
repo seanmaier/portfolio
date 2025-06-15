@@ -99,6 +99,7 @@ export const Select = ({
         type="button"
         className={`flex w-full cursor-pointer items-center justify-between gap-2 ${sizeClasses[size]}`}
         onClick={toggleDropdown}
+        whileHover={{ scale: 1.07 }}
         whileTap={{ scale: 0.9 }}
         initial={false}
       >

@@ -96,7 +96,12 @@ const Experience = () => {
           <h3 className="text-4xl font-bold">Frontend</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.frontend.map((badge, i, arr) => (
-              <motion.div whileHover={{ scale: 1.05 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                initial={{ opacity: 0, scale: 0, y: 50 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <BigBadge
                   key={i}
                   className="text-white"
@@ -116,7 +121,12 @@ const Experience = () => {
           <h3 className="text-4xl font-bold">Backend</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.backend.map((badge, i, arr) => (
-              <motion.div whileHover={{ scale: 1.05 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                initial={{ opacity: 0, scale: 0, y: 50 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <BigBadge
                   key={i}
                   className="text-white"
@@ -136,7 +146,12 @@ const Experience = () => {
           <h3 className="text-4xl font-bold">{t("databases")}</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.databases.map((badge, i, arr) => (
-              <motion.div whileHover={{ scale: 1.05 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                initial={{ opacity: 0, scale: 0, y: 50 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <BigBadge
                   key={i}
                   className="text-white"
@@ -156,7 +171,12 @@ const Experience = () => {
           <h3 className="text-4xl font-bold">{t("analytics")}</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.analytics.map((badge, i, arr) => (
-              <motion.div whileHover={{ scale: 1.05 }}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                initial={{ opacity: 0, scale: 0, y: 50 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
                 <BigBadge
                   key={i}
                   className="text-white"
@@ -183,7 +203,10 @@ const Experience = () => {
                 key={i}
                 className="itemLeft"
                 style={
-                  { "--n": i + 1, "--count": arr.length } as React.CSSProperties
+                  {
+                    "--n": i + 1,
+                    "--count": arr.length,
+                  } as React.CSSProperties
                 }
                 title={badge.skill}
                 icon={badge.icon}

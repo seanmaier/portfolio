@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Button from "./button/Button";
 import { motion } from "motion/react";
 import Badge from "./Badge";
+import Reveal from "./Reveal";
 
 interface Props {
   title: string;
@@ -30,7 +31,7 @@ export const ProjectCard = ({
     >
       <div className="from-tertiary-300 to-secondary-500 lg:max-w-1xl flex max-w-lg flex-col gap-5 rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black">
         <h2 className="font-jetbrains text-center text-4xl font-bold text-white">
-          {title}
+          <Reveal>{title}</Reveal>
         </h2>
         <div className="flex flex-col items-center gap-5">{children}</div>
 
@@ -47,7 +48,7 @@ export const ProjectCard = ({
               onClick={() => window.open(link, "_blank")}
               fullWidth
               disabled={disabled}
-              variant="tertiary"
+              variant="dotted"
             >
               {disabled ? t("not-published") : t("check-out")}
             </Button>

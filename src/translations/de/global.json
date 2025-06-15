@@ -14,7 +14,8 @@
   },
   "about": {
     "title": "Hallo, ich bin Sean!",
-    "description": "Ich bin ein Junior-Entwickler mit großem Interesse an Software Engineering. Ich bin neugierig und lerne gerne Neues, egal ob es mit meinem Beruf zu tun hat oder etwas ganz anderes ist. Wenn Sie kooperieren möchten, zögern Sie nicht, mich zu kontaktieren!",
+    "description-1": "Ich bin ein Junior-Entwickler mit großem Interesse daran, mehr über Softwareentwicklung zu lernen. Ich entwickle Fullstack mit Fokus auf das Backend.",
+    "description-2": "Ich bin neugierig und liebe es, neue Dinge zu lernen, sei es in meinem Beruf oder in anderen Bereichen. Wenn Sie an einer Zusammenarbeit interessiert sind, zögern Sie nicht, mich zu kontaktieren!",
     "contact": "Kontakt"
   },
   "career": {

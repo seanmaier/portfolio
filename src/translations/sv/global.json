@@ -14,7 +14,8 @@
   },
   "about": {
     "title": "Hej, jag är Sean!",
-    "description": "Jag är en juniorutvecklare med stort intresse för mjukvaruutveckling. Jag är nyfiken och gillar att lära mig nya saker, oavsett om det är relaterat till mitt yrke eller något helt annat. Om du vill samarbeta, tveka inte att kontakta mig!",
+    "description-1": "Jag är en juniorutvecklare med stort intresse för att lära mig mer om mjukvaruutveckling. Jag utvecklar fullstack med fokus på backend.",
+    "description-2": "Jag är nyfiken och älskar att lära mig nya saker, oavsett om det är relaterat till mitt yrke eller något helt annat. Om du vill samarbeta, tveka inte att kontakta mig!",
     "contact": "Kontakt"
   },
   "career": {

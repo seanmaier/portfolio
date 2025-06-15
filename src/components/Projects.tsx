@@ -5,6 +5,7 @@ import portfolio from "../assets/portfolio-logo.png";
 import { ProjectCard } from "./ProjectCard";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
+import Reveal from "./Reveal";
 
 const Projects = () => {
   const [t] = useTranslation("global", { keyPrefix: "projects" });
@@ -12,7 +13,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-60"
+      className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-30"
     >
       <div className="flex flex-col items-center gap-5">
         <h1
@@ -22,7 +23,7 @@ const Projects = () => {
           {t("title")}
         </h1>
         <p className="text-2xl text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-          {t("description")}
+          <Reveal>{t("description")}</Reveal>
         </p>
       </div>
       <div className="flex flex-col justify-center gap-10 lg:flex-row lg:flex-wrap">
@@ -37,10 +38,10 @@ const Projects = () => {
             src={thouChat}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            {t("thouChat-description-1")}
+            <Reveal>{t("thouChat-description-1")}</Reveal>
             <br />
             <br />
-            {t("thouChat-description-2")}
+            <Reveal>{t("thouChat-description-2")}</Reveal>
           </p>
           <div className="flex flex-wrap gap-1"></div>
         </ProjectCard>
@@ -55,9 +56,11 @@ const Projects = () => {
             src={macroForge}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            {t("macroForge-description-1")}
+            <Reveal>{t("macroForge-description-1")}</Reveal>
             <br />
-            <br /> {t("macroForge-description-2")}
+            <Reveal>
+              <br /> {t("macroForge-description-2")}
+            </Reveal>
           </p>
         </ProjectCard>
         <ProjectCard
@@ -80,9 +83,11 @@ const Projects = () => {
             src={skat}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            {t("skatfreunde-description-1")}
+            <Reveal>{t("skatfreunde-description-1")}</Reveal>
             <br />
-            <br /> {t("skatfreunde-description-2")}
+            <Reveal>
+              <br /> {t("skatfreunde-description-2")}
+            </Reveal>
           </p>
         </ProjectCard>
         <ProjectCard
@@ -96,7 +101,7 @@ const Projects = () => {
             src={portfolio}
           />
           <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            {t("portfolio-description")}
+            <Reveal>{t("portfolio-description")}</Reveal>
           </p>
         </ProjectCard>
       </div>
