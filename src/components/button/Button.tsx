@@ -12,6 +12,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     | "text"
     | "danger"
     | "ghost"
+    | "dotted"
     | "link";
   size?: "sm" | "md" | "lg";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
@@ -55,6 +56,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       ghost:
         "bg-transparent hover:bg-gray-100 hover:text-gray-700 text-gray-300 focus:ring-gray-500 border border-gray-300",
       link: "bg-transparent hover:underline text-blue-600 hover:text-blue-800 focus:ring-blue-500 p-0",
+      dotted:
+        "bg-tertiary-500 border-2 border-dashed focus:ring-gray-900 border-black text-white uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px]  hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none",
     };
 
     // Size classes
@@ -93,7 +96,12 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     return (
-      <motion.div whileHover={{ scale }} whileTap={{ scale: 0.8 }}>
+      <motion.div
+        whileHover={{
+          scale,
+        }}
+        whileTap={{ scale: 0.8 }}
+      >
         <button
           ref={ref}
           className={mergedClasses}
@@ -101,15 +109,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           {...props}
         >
           {icon && iconPosition === "left" && (
-            <span
-              className={`mr-2 ${loading ? "invisible" : ""}`}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                height: "1em",
-                width: "1em",
-              }}
-            >
+            <span className={`mr-2 text-2xl ${loading ? "invisible" : ""}`}>
               {icon}
             </span>
           )}
