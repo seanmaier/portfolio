@@ -82,7 +82,7 @@ const Experience = () => {
       className="bg-creme it flex w-screen flex-col items-center justify-center gap-10 py-20"
     >
       <div className="mb-10 flex flex-col justify-center gap-8 text-center">
-        <h2 className="text-4xl font-bold italic lg:text-5xl">{t("title")}</h2>
+        <h2 className="text-4xl lg:text-5xl">{t("title")}</h2>
         <div className="flex items-center justify-center gap-5">
           <span className="text-2xl font-bold">{t("compact")}</span>
           <label className="switch">
@@ -93,7 +93,7 @@ const Experience = () => {
       </div>
       {compact ? (
         <div className="flex flex-col items-center gap-15">
-          <h3 className="text-4xl font-bold">Frontend</h3>
+          <h3>Frontend</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.frontend.map((badge, i, arr) => (
               <motion.div
@@ -118,7 +118,7 @@ const Experience = () => {
               </motion.div>
             ))}
           </div>
-          <h3 className="text-4xl font-bold">Backend</h3>
+          <h3>Backend</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.backend.map((badge, i, arr) => (
               <motion.div
@@ -143,7 +143,7 @@ const Experience = () => {
               </motion.div>
             ))}
           </div>
-          <h3 className="text-4xl font-bold">{t("databases")}</h3>
+          <h3>{t("databases")}</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.databases.map((badge, i, arr) => (
               <motion.div
@@ -168,7 +168,7 @@ const Experience = () => {
               </motion.div>
             ))}
           </div>
-          <h3 className="text-4xl font-bold">{t("analytics")}</h3>
+          <h3>{t("analytics")}</h3>
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.analytics.map((badge, i, arr) => (
               <motion.div
@@ -196,7 +196,7 @@ const Experience = () => {
         </div>
       ) : (
         <>
-          <h3 className="text-4xl font-bold">Frontend</h3>
+          <h3>Frontend</h3>
           <div className="wrapper">
             {badges.frontend.map((badge, i, arr) => (
               <BigBadge
@@ -213,7 +213,7 @@ const Experience = () => {
               />
             ))}
           </div>
-          <h3 className="text-4xl font-bold">Backend</h3>
+          <h3>Backend</h3>
           <div className="wrapper">
             {repeatToLength(badges.backend, 8).map((badge, i, arr) => (
               <BigBadge
@@ -227,7 +227,7 @@ const Experience = () => {
               />
             ))}
           </div>
-          <h3 className="text-4xl font-bold">{t("databases")}</h3>
+          <h3>{t("databases")}</h3>
           <div className="wrapper">
             {repeatToLength(badges.databases, 8).map((badge, i, arr) => (
               <BigBadge
@@ -241,7 +241,7 @@ const Experience = () => {
               />
             ))}
           </div>
-          <h3 className="text-4xl font-bold">{t("analytics")}</h3>
+          <h3>{t("analytics")}</h3>
           <div className="wrapper">
             {repeatToLength(badges.analytics, 8).map((badge, i, arr) => (
               <BigBadge

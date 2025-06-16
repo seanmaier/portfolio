@@ -19,17 +19,13 @@ const Navbar = () => {
   return (
     <div className="bg-primary-500 sticky top-0 z-50 flex h-16 items-center justify-between px-3 md:px-20">
       <div className="relative flex items-center gap-3">
-        <a
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer"
-        >
-          <span className="text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-1 before:bg-white before:content-['']">
-            <FlipLink
-              children={"Sean Maier"}
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            />
-          </span>
-        </a>
+        <span className="cursor-pointer text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-1 before:bg-white before:content-['']">
+          <FlipLink
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Sean Maier
+          </FlipLink>
+        </span>
       </div>
       <div className="flex gap-5">
         <div className="hidden gap-3 lg:flex">

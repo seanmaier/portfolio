@@ -17,15 +17,13 @@ const AboutMe = () => {
     >
       <div className="flex max-w-lg flex-col gap-8 p-5">
         <Reveal>
-          <h2 className="text-[clamp(2.5rem,7vw,6rem)] font-bold italic">
-            {t("title")}
-          </h2>
+          <h2 className="font-sans">{t("title")}</h2>
         </Reveal>
-        <p className="text-[clamp(10px,20px,40px)] md:max-w-md">
+        <div className="text-[clamp(10px,20px,40px)] md:max-w-md">
           <Reveal>{t("description-1")}</Reveal>
           <br />
           <Reveal>{t("description-2")}</Reveal>
-        </p>
+        </div>
         <Button
           variant="dotted"
           size="lg"

@@ -16,15 +16,12 @@ const Projects = () => {
       className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-30"
     >
       <div className="flex flex-col items-center gap-5">
-        <h1
-          id="work"
-          className="font-jetbrains text-6xl font-bold text-white italic lg:text-8xl"
-        >
+        <h2 id="work" className="text-white">
           {t("title")}
-        </h1>
-        <p className="text-2xl text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+        </h2>
+        <div className="text-2xl text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
           <Reveal>{t("description")}</Reveal>
-        </p>
+        </div>
       </div>
       <div className="flex flex-col justify-center gap-10 lg:flex-row lg:flex-wrap">
         <ProjectCard
@@ -37,12 +34,12 @@ const Projects = () => {
             className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={thouChat}
           />
-          <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("thouChat-description-1")}</Reveal>
             <br />
             <br />
             <Reveal>{t("thouChat-description-2")}</Reveal>
-          </p>
+          </div>
           <div className="flex flex-wrap gap-1"></div>
         </ProjectCard>
         <ProjectCard
@@ -55,13 +52,13 @@ const Projects = () => {
             className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={macroForge}
           />
-          <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("macroForge-description-1")}</Reveal>
             <br />
             <Reveal>
               <br /> {t("macroForge-description-2")}
             </Reveal>
-          </p>
+          </div>
         </ProjectCard>
         <ProjectCard
           disabled
@@ -82,13 +79,13 @@ const Projects = () => {
             className="bg-creme w-80 rounded-2xl p-5 shadow-lg shadow-gray-800 outline-2"
             src={skat}
           />
-          <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("skatfreunde-description-1")}</Reveal>
             <br />
             <Reveal>
               <br /> {t("skatfreunde-description-2")}
             </Reveal>
-          </p>
+          </div>
         </ProjectCard>
         <ProjectCard
           noButton
@@ -100,9 +97,9 @@ const Projects = () => {
             className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
             src={portfolio}
           />
-          <p className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("portfolio-description")}</Reveal>
-          </p>
+          </div>
         </ProjectCard>
       </div>
     </div>

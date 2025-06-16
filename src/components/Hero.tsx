@@ -37,9 +37,9 @@ const Hero = () => {
           />
         </div>
         <div className="relative flex flex-1 items-center justify-center md:gap-8">
-          <p className="font-birthstone absolute z-30 h-20 -translate-y-40 text-8xl text-white md:right-0 md:-translate-x-10 md:text-[150px] lg:-translate-y-70 lg:text-[200px] xl:text-[250px]">
+          <h1 className="font-birthstone absolute z-30 h-20 -translate-y-40 text-8xl text-white md:right-0 md:-translate-x-10 md:text-[150px] lg:-translate-y-70 lg:text-[200px] xl:text-[250px]">
             {t("title")}
-          </p>
+          </h1>
           <p className="font-birthstone absolute z-30 h-20 -translate-y-20 text-8xl text-transparent drop-shadow-sm [-webkit-text-stroke:2px_#f9b21d] [text-stroke:2px_#f9b21d] md:right-0 md:-translate-x-10 md:-translate-y-15 md:text-[150px] lg:-translate-y-40 lg:text-[200px] xl:text-[250px]">
             {t("title")}
           </p>
