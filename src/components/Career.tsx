@@ -4,11 +4,8 @@ const Career = () => {
   const [t] = useTranslation("global", { keyPrefix: "career" });
 
   return (
-    <div className="main bg-primary-500">
-      <h1
-        id="work"
-        className="font-jetbrains relative mb-13 text-4xl text-[clamp(2.5rem,5vw,4rem)] font-bold text-white italic before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-white before:content-['']"
-      >
+    <div id="career" className="main bg-primary-500">
+      <h1 className="font-jetbrains relative mb-13 text-4xl text-[clamp(2.5rem,5vw,4rem)] font-bold text-white italic before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-white before:content-['']">
         {t("title")}
       </h1>
       <div className="main container">
@@ -71,7 +68,12 @@ const Career = () => {
             </h2>
             <span className="date">{t("pit_2024-date")}</span>
             <span className="circle"></span>
-            <p className="text-md">{t("pit_2024-description")}</p>
+            <p className="text-md">
+              {t("pit_2024-description-1")}
+              <br />
+              <br />
+              {t("pit_2024-description-2")}
+            </p>
           </li>
           <li>
             <h2 className="text-2xl font-bold">
@@ -91,7 +93,12 @@ const Career = () => {
             </h2>
             <span className="date">{t("bib-date")}</span>
             <span className="circle"></span>
-            <p className="text-md">{t("bib-description")}</p>
+            <p className="text-md">
+              {t("bib-description-1")}
+              <br />
+              <br />
+              {t("bib-description-2")}
+            </p>
           </li>
           <li>
             <h2 className="text-2xl font-bold">
@@ -111,7 +118,12 @@ const Career = () => {
             </h2>
             <span className="date">{t("hoermann-date")}</span>
             <span className="circle"></span>
-            <p className="text-md">{t("hoermann-description")}</p>
+            <p className="text-md">
+              {t("hoermann-description-1")}
+              <br />
+              <br />
+              {t("hoermann-description-2")}
+            </p>
           </li>
         </ul>
       </div>

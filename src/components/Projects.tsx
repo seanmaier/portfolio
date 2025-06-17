@@ -3,13 +3,16 @@ import macroForge from "../assets/macro-forge.png";
 import skat from "../assets/skatspieler.png";
 import Badge from "./Badge";
 import { ProjectCard } from "./ProjectCard";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
   const [t] = useTranslation("global", { keyPrefix: "projects" });
 
   return (
-    <div className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-90">
+    <div
+      id="projects"
+      className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-90"
+    >
       <div className="flex flex-col items-center gap-5">
         <h1
           id="work"
