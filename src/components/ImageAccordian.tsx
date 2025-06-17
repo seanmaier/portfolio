@@ -1,5 +1,3 @@
-import type { ItemType } from "./UnsplashGrid";
-
 // https://cruip.com/create-an-image-accordion-with-tailwind/
 
 interface Props {

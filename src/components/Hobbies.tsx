@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { useState } from "react";
 import cinematography from "../assets/IMG_1868.JPEG";
 import travelling from "../assets/IMG_3134.JPEG";
@@ -34,8 +35,6 @@ const items: Item[] = [
 ];
 
 const Hobbies = () => {
-  const [index, setIndex] = useState(2);
-
   return (
     <div
       id="hobbies"

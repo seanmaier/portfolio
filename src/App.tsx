@@ -9,6 +9,7 @@ import Hobbies from "./components/Hobbies";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import LoadingScreen from "./components/LoadingScreen";
+import Certificates from "./components/Certificates";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -31,6 +32,8 @@ const App = () => {
           <Projects />
           <div className="spacer layer2" />
           <Hobbies />
+          <div className="spacer layer1" />
+          <Certificates />
           <Footer />
         </>
       )}
