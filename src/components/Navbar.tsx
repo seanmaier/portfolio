@@ -1,42 +1,36 @@
 import Button from "./button/Button";
 import { useTranslation } from "react-i18next";
-import { type Languages } from "../utils/language";
+import { Select, type SelectOption } from "./Select";
+import FlipLink from "./FlipLink";
 
-type LanguageOption = {
-  code: Languages;
-  label: string;
-  flag: string;
-};
-
-const languageOptions: LanguageOption[] = [
-  { code: "en", label: "English", flag: "🇺🇲" },
-  { code: "de", label: "Deutsch", flag: "🇩🇪" },
-  { code: "sv", label: "Svenska", flag: "🇸🇪" },
+const options: SelectOption[] = [
+  { value: "en", label: "English", icon: "🇺🇲" },
+  { value: "de", label: "Deutsch", icon: "🇩🇪" },
+  { value: "sv", label: "Svenska", icon: "🇸🇪" },
 ];
 
 const Navbar = () => {
   const [t, i18n] = useTranslation("global", { keyPrefix: "navbar" });
 
-  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const language = e.target.value;
-    i18n.changeLanguage(language);
+  const changeLanguage = (e: string) => {
+    i18n.changeLanguage(e);
   };
 
   return (
-    <div className="navbar bg-primary-500 sticky top-0 z-100 flex h-16 items-center justify-between px-5 md:px-20">
+    <div className="bg-primary-500 sticky top-0 z-50 flex h-16 items-center justify-between px-3 md:px-20">
       <div className="relative flex items-center gap-3">
-        <a
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-pointer"
-        >
-          <span className="text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-0.5 before:bg-white before:content-['']">
+        <span className="cursor-pointer text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-1 before:bg-white before:content-['']">
+          <FlipLink
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             Sean Maier
-          </span>
-        </a>
+          </FlipLink>
+        </span>
       </div>
       <div className="flex gap-5">
         <div className="hidden gap-3 lg:flex">
           <Button
+            scale={1.2}
             size="sm"
             variant="text"
             onClick={() =>
@@ -48,6 +42,7 @@ const Navbar = () => {
             {t("about")}
           </Button>
           <Button
+            scale={1.2}
             size="sm"
             variant="text"
             onClick={() =>
@@ -59,6 +54,7 @@ const Navbar = () => {
             {t("career")}
           </Button>
           <Button
+            scale={1.2}
             size="sm"
             variant="text"
             onClick={() =>
@@ -70,6 +66,7 @@ const Navbar = () => {
             {t("experience")}
           </Button>
           <Button
+            scale={1.2}
             size="sm"
             variant="text"
             onClick={() =>
@@ -81,6 +78,7 @@ const Navbar = () => {
             {t("projects")}
           </Button>
           <Button
+            scale={1.2}
             size="sm"
             variant="text"
             onClick={() =>
@@ -93,25 +91,24 @@ const Navbar = () => {
           </Button>
         </div>
         <Button
+          scale={1.2}
+          variant="dotted"
           size="sm"
-          className="ml-2"
+          className="bg-secondary-500 ml-2"
           onClick={() =>
             (window.location.href = "mailto:sean.maier@outlook.com")
           }
         >
           {t("contact")}
         </Button>
-        <select
-          onChange={changeLanguage}
+        <Select
+          className="bg-primary-600"
+          placeholder="Select Language"
+          onChange={(lang) => changeLanguage(lang)}
+          size="sm"
+          options={options}
           value={i18n.language}
-          id="lang-select"
-        >
-          {languageOptions.map((lang) => (
-            <option key={lang.code} value={lang.code}>
-              {lang.flag}
-            </option>
-          ))}
-        </select>
+        />
       </div>
     </div>
   );
