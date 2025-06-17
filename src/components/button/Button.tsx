@@ -1,8 +1,10 @@
+import { motion } from "motion/react";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
+  scale?: number;
   variant?:
     | "primary"
     | "secondary"
@@ -10,6 +12,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     | "text"
     | "danger"
     | "ghost"
+    | "dotted"
     | "link";
   size?: "sm" | "md" | "lg";
   rounded?: "none" | "sm" | "md" | "lg" | "full";
@@ -24,6 +27,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     {
       variant = "primary",
       size = "md",
+      scale = 1.05,
       rounded = "full",
       fullWidth = false,
       loading = false,
@@ -52,6 +56,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       ghost:
         "bg-transparent hover:bg-gray-100 hover:text-gray-700 text-gray-300 focus:ring-gray-500 border border-gray-300",
       link: "bg-transparent hover:underline text-blue-600 hover:text-blue-800 focus:ring-blue-500 p-0",
+      dotted:
+        "bg-tertiary-500 border-2 border-dashed focus:ring-gray-900 border-black text-white uppercase transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px]  hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none",
     };
 
     // Size classes
@@ -90,78 +96,77 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     return (
-      <button
-        ref={ref}
-        className={mergedClasses}
-        disabled={loading || props.disabled}
-        {...props}
+      <motion.div
+        whileHover={{
+          scale,
+        }}
+        whileTap={{ scale: 0.8 }}
       >
-        {icon && iconPosition === "left" && (
-          <span
-            className={`mr-2 ${loading ? "invisible" : ""}`}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              height: "1em",
-              width: "1em",
-            }}
-          >
-            {icon}
-          </span>
-        )}
-        <span className={loading ? "invisible" : ""}>{children}</span>
-        {icon && iconPosition === "right" && (
-          <span
-            className={`ml-2 ${loading ? "invisible" : ""}`}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              height: "1em",
-              width: "1em",
-            }}
-          >
-            {icon}
-          </span>
-        )}
-        {icon && iconPosition === undefined && (
-          <span
-            className={`inline-flex items-center justify-center ${
-              loading ? "invisible" : ""
-            }`}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              height: "2rem",
-              width: "1.5rem",
-            }}
-          >
-            {icon}
-          </span>
-        )}
-        {loading && (
-          <span className="absolute">
-            <svg
-              className="h-5 w-5 animate-spin text-current"
-              fill="none"
-              viewBox="0 0 24 24"
+        <button
+          ref={ref}
+          className={mergedClasses}
+          disabled={loading || props.disabled}
+          {...props}
+        >
+          {icon && iconPosition === "left" && (
+            <span className={`mr-2 text-2xl ${loading ? "invisible" : ""}`}>
+              {icon}
+            </span>
+          )}
+          <span className={loading ? "invisible" : ""}>{children}</span>
+          {icon && iconPosition === "right" && (
+            <span
+              className={`ml-2 ${loading ? "invisible" : ""}`}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                height: "1em",
+                width: "1em",
+              }}
             >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              ></circle>
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              ></path>
-            </svg>
-          </span>
-        )}
-      </button>
+              {icon}
+            </span>
+          )}
+          {icon && iconPosition === undefined && (
+            <span
+              className={`inline-flex items-center justify-center ${
+                loading ? "invisible" : ""
+              }`}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                height: "2rem",
+                width: "1.5rem",
+              }}
+            >
+              {icon}
+            </span>
+          )}
+          {loading && (
+            <span className="absolute">
+              <svg
+                className="h-5 w-5 animate-spin text-current"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                ></path>
+              </svg>
+            </span>
+          )}
+        </button>
+      </motion.div>
     );
   },
 );

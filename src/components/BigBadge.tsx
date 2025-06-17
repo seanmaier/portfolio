@@ -1,12 +1,26 @@
-interface Props {
+import React, { type ReactNode } from "react";
+
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
+  icon?: ReactNode;
+  compact?: boolean;
 }
 
-const BigBadge = ({ title }: Props) => {
+const BigBadge = ({
+  title,
+  className = "",
+  id,
+  icon,
+  compact,
+  ...rest
+}: Props) => {
   return (
-    <div className="bg-tertiary-500 flex h-15 items-center justify-center rounded-2xl px-3 text-white opacity-90 shadow-2xl outline-2 outline-black">
-      <span className="font-jetbrains text-xl">{title}</span>
-      <span className="ml-3 h-4 w-4 rounded-full outline-2 outline-black"></span>
+    <div
+      className={`font-jetbrains flex items-center justify-center gap-2 px-3 text-lg text-gray-500 opacity-90 ${compact && "bg-tertiary-500 rounded-2xl py-2 outline-2"} ${className}`}
+      {...rest}
+    >
+      {icon && <span className="ml-2 text-2xl">{icon}</span>}
+      <span className="text-xl">{title}</span>
     </div>
   );
 };

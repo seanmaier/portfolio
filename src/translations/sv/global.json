@@ -14,7 +14,8 @@
   },
   "about": {
     "title": "Hej, jag är Sean!",
-    "description": "Jag är en juniorutvecklare med stort intresse för mjukvaruutveckling. Jag är nyfiken och gillar att lära mig nya saker, oavsett om det är relaterat till mitt yrke eller något helt annat. Om du vill samarbeta, tveka inte att kontakta mig!",
+    "description-1": "Jag är en utvecklare med stort intresse för att lära mig mer om mjukvaruutveckling. Jag utvecklar fullstack med fokus på backend.",
+    "description-2": "Jag är nyfiken och älskar att lära mig nya saker, oavsett om det är relaterat till mitt yrke eller något helt annat. Om du vill samarbeta, tveka inte att kontakta mig!",
     "contact": "Kontakt"
   },
   "career": {
@@ -40,6 +41,7 @@
   },
   "experience": {
     "title": "Teknologier jag har erfarenhet av:",
+    "compact": "Kompakt vy",
     "databases": "Databaser",
     "analytics": "Dataanalys"
   },
@@ -53,7 +55,30 @@
     "macroForge-description-1": "MacroForge är en makroinspelare och redigerare för Windows, byggd med C# och WPF. Den låter användare spela in sina mus- och tangentbordsåtgärder och spela upp dem senare. Projektet var ett utmärkt tillfälle att lära sig om Windows API, händelsehantering och användargränssnittsdesign.",
     "macroForge-description-2": "Jag lärde mig att arbeta med Windows API för att fånga mus- och tangentbordshändelser, samt hur man skapar ett användarvänligt gränssnitt med WPF. Projektet lärde mig också vikten av testning och felsökning i mjukvaruutveckling.",
     "skatfreunde-description-1": "Skatfreunde Jöllenbeck är en webbplats byggd med React, TypeScript och C#. Den fungerar som en plattform för den lokala Skat-klubben att hantera sina medlemmar, evenemang och poäng. Projektet var ett utmärkt tillfälle att lära sig om fullstackutveckling och hur man bygger en webbapplikation från grunden.",
-    "skatfreunde-description-2": "Jag lärde mig att arbeta med REST API:er, hantera tillstånd i React och hur man distribuerar en webbapplikation med Node.js. Projektet lärde mig också vikten av användarupplevelse och hur man skapar en responsiv design."
+    "skatfreunde-description-2": "Jag lärde mig att arbeta med REST API:er, hantera tillstånd i React och hur man distribuerar en webbapplikation med Node.js. Projektet lärde mig också vikten av användarupplevelse och hur man skapar en responsiv design.",
+    "portfolio-description": "Denna portföljwebbplats är byggd med React, TypeScript och Tailwind CSS. Det var ett litet projekt bara för skojs skull för att visa upp mina färdigheter och projekt. Den är helt responsiv och fungerar på alla enheter."
+  },
+  "hobbies": {
+    "title": "Mer om mig",
+    "subtitle1": "Språken jag talar:",
+    "subtitle2": "Hobbyer",
+    "german": "Tyska",
+    "english": "Engelska",
+    "swedish": "Svenska",
+    "langLevel1": "Modersmål",
+    "langLevel2": "Flytande",
+    "langLevel3": "Nybörjare",
+    "travel-title": "Resor",
+    "travel-description": "Jag älskar att upptäcka nya platser och kulturer och fånga minnen.",
+    "music-title": "Musik",
+    "music-description": "Musik är en stor del av mitt liv, oavsett om jag spelar ett instrument eller njuter av liveframträdanden.",
+    "cinema-title": "Filmkonst",
+    "cinema-description": "Jag tycker om att skapa videor och fånga ögonblick med kameran.",
+    "hike-title": "Vandring",
+    "hike-description": "Att se världen från ovan är en av mina favoritsysselsättningar."
+  },
+  "certificates": {
+    "title": "Certifikat"
   },
   "footer": {
     "rights": "Alla rättigheter reserverade.",
