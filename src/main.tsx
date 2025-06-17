@@ -32,7 +32,6 @@ i18next
     interpolation: {
       escapeValue: false, // React already does escaping
     },
-    debug: true,
   });
 
 i18next.on("languageChanged", (lng) => {

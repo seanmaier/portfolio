@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Career from "./components/Career";
+import Certificates from "./components/Certificates";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import HeroQuote from "./components/HeroQuote";
 import Hobbies from "./components/Hobbies";
+import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
-import LoadingScreen from "./components/LoadingScreen";
-import Certificates from "./components/Certificates";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
