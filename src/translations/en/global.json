@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "Hello, I am Sean!",
-    "description-1": "I am a junior developer with a strong interest in learning more about software engineering. I develop fullstack with focus on the backend.",
+    "description-1": "I am a developer with a strong interest in learning more about software engineering. I develop fullstack with focus on the backend.",
     "description-2": "I am curious and love to learn new things, whether it is related to my profession or something completely different. If you want to collaborate, feel free to reach out!",
     "contact": "Contact"
   },
@@ -57,6 +57,28 @@
     "skatfreunde-description-1": "Skatfreunde Jöllenbeck is a website built with React, TypeScript, and C#. It serves as a platform for the local Skat club to manage their members, events, and scores. The project was a great opportunity to learn about full-stack development and how to build a web application from scratch.",
     "skatfreunde-description-2": "I learned how to work with REST APIs, manage state in React, and how to deploy a web application using Node.js. The project also taught me about the importance of user experience and how to create a responsive design.",
     "portfolio-description": "This portfolio website is built with React, TypeScript, and Tailwind CSS. It was a small just for fun project to showcase my skills and projects. It is fully responsive and works on all devices."
+  },
+  "hobbies": {
+    "title": "More about me",
+    "subtitle1": "The languages I speak:",
+    "subtitle2": "Hobbies",
+    "german": "German",
+    "english": "English",
+    "swedish": "Swedish",
+    "langLevel1": "Mother Tongue",
+    "langLevel2": "Fluent",
+    "langLevel3": "Beginner",
+    "travel-title": "Travelling",
+    "travel-description": "I love to explore new places and cultures, capturing memories along the way.",
+    "music-title": "Music",
+    "music-description": "Music is a big part of my life, whether it's playing an instrument or enjoying live performances.",
+    "cinema-title": "Cinematography",
+    "cinema-description": "I enjoy creating videos and capturing moments through the lens of a camera.",
+    "hike-title": "Hiking",
+    "hike-description": "Seeing the world from above is one of my favorite things to do."
+  },
+  "certificates": {
+    "title": "Certificates"
   },
   "footer": {
     "rights": "All rights reserved.",

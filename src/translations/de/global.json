@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "Hallo, ich bin Sean!",
-    "description-1": "Ich bin ein Junior-Entwickler mit großem Interesse daran, mehr über Softwareentwicklung zu lernen. Ich entwickle Fullstack mit Fokus auf das Backend.",
+    "description-1": "Ich bin ein Entwickler mit großem Interesse daran, mehr über Softwareentwicklung zu lernen. Ich entwickle Fullstack mit Fokus auf das Backend.",
     "description-2": "Ich bin neugierig und liebe es, neue Dinge zu lernen, sei es in meinem Beruf oder in anderen Bereichen. Wenn Sie an einer Zusammenarbeit interessiert sind, zögern Sie nicht, mich zu kontaktieren!",
     "contact": "Kontakt"
   },
@@ -57,6 +57,28 @@
     "skatfreunde-description-1": "Skatfreunde Jöllenbeck ist eine Website, die mit React, TypeScript und C# entwickelt wurde. Sie dient als Plattform für den lokalen Skat-Club zur Verwaltung von Mitgliedern, Veranstaltungen und Punkten. Das Projekt war eine tolle Gelegenheit, Fullstack-Entwicklung und den Aufbau einer Webanwendung von Grund auf zu lernen.",
     "skatfreunde-description-2": "Ich habe gelernt, mit REST-APIs zu arbeiten, State-Management in React zu handhaben und wie man eine Webanwendung mit Node.js deployt. Das Projekt hat mir auch die Bedeutung von User Experience und responsivem Design nähergebracht.",
     "portfolio-description": "Diese Portfolio-Website wurde mit React, TypeScript und Tailwind CSS erstellt. Es war ein kleines Projekt nur zum Spaß, um meine Fähigkeiten und Projekte zu präsentieren. Sie ist vollständig responsiv und funktioniert auf allen Geräten."
+  },
+  "hobbies": {
+    "title": "Mehr über mich",
+    "subtitle1": "Die Sprachen, die ich spreche:",
+    "subtitle2": "Hobbys",
+    "german": "Deutsch",
+    "english": "Englisch",
+    "swedish": "Schwedisch",
+    "langLevel1": "Muttersprache",
+    "langLevel2": "Fließend",
+    "langLevel3": "Anfänger",
+    "travel-title": "Reisen",
+    "travel-description": "Ich liebe es, neue Orte und Kulturen zu entdecken und Erinnerungen festzuhalten.",
+    "music-title": "Musik",
+    "music-description": "Musik ist ein großer Teil meines Lebens, egal ob ich ein Instrument spiele oder Live-Auftritte genieße.",
+    "cinema-title": "Filmkunst",
+    "cinema-description": "Ich genieße es, Videos zu erstellen und Momente mit der Kamera festzuhalten.",
+    "hike-title": "Wandern",
+    "hike-description": "Die Welt von oben zu sehen, gehört zu meinen Lieblingsbeschäftigungen."
+  },
+  "certificates": {
+    "title": "Zertifikate"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",

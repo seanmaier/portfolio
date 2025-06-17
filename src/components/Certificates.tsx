@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import jsAdv from "../assets/js-advanced.png";
 import jsFun from "../assets/js-fundamentals.png";
 import reactBegin from "../assets/react-beginners.png";
@@ -29,15 +30,15 @@ const images: Certificate[] = [
 ];
 
 const Certificates = () => {
+  const [t] = useTranslation("global", { keyPrefix: "certificates" });
+
   return (
-    <>
-      <div className="bg-primary-500 relative flex flex-col items-center gap-20 overflow-hidden py-14 text-white">
-        <h2 className="text-5xl md:text-8xl">Certificates</h2>
-        <div className="h-[20rem] md:h-[30rem] lg:h-[40rem]">
-          <InfiniteScroll images={images} />
-        </div>
+    <div className="bg-primary-500 relative flex flex-col items-center gap-20 overflow-hidden py-14 text-white">
+      <h2 className="text-5xl md:text-8xl">{t("title")}</h2>
+      <div className="h-[20rem] md:h-[30rem] lg:h-[40rem]">
+        <InfiniteScroll images={images} />
       </div>
-    </>
+    </div>
   );
 };
 
