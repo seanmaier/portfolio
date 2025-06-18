@@ -29,7 +29,7 @@ const Reveal = ({ children, slideOff }: Props) => {
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.25 }}
       >
         {children}
       </motion.div>
@@ -39,7 +39,7 @@ const Reveal = ({ children, slideOff }: Props) => {
           variants={{ hidden: { left: 0 }, visible: { left: "100%" } }}
           initial="hidden"
           animate={slideControls}
-          transition={{ duration: 0.5, delay: 0.25, ease: "easeIn" }}
+          transition={{ duration: 0.5, delay: 0, ease: "easeIn" }}
         />
       )}
     </div>

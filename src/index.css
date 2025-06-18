@@ -453,7 +453,7 @@ ul li .date {
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 4px;
 }
 ::-webkit-scrollbar-track {
   background: var(--color-primary-100);

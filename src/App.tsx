@@ -19,22 +19,24 @@ const App = () => {
       {!isLoading && (
         <>
           <Navbar />
-          <Hero />
-          <div className="spacer layer4" />
-          <HeroQuote />
-          <div className="spacer layer3" />
-          <AboutMe />
-          <div className="spacer layer1" />
-          <Career />
-          <div className="spacer layer2" />
-          <Experience />
-          <div className="spacer layer1" />
-          <Projects />
-          <div className="spacer layer2" />
-          <Hobbies />
-          <div className="spacer layer1" />
-          <Certificates />
-          <Footer />
+          <div className="overflow-x-hidden">
+            <Hero />
+            <div className="spacer layer4" />
+            <HeroQuote />
+            <div className="spacer layer3" />
+            <AboutMe />
+            <div className="spacer layer1" />
+            <Career />
+            <div className="spacer layer2" />
+            <Experience />
+            <div className="spacer layer1" />
+            <Projects />
+            <div className="spacer layer2" />
+            <Hobbies />
+            <div className="spacer layer1" />
+            <Certificates />
+            <Footer />
+          </div>
         </>
       )}
       <LoadingScreen isLoading={isLoading} setIsLoading={setLoading} />

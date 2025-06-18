@@ -79,7 +79,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="bg-creme it flex w-screen flex-col items-center justify-center gap-10 py-20"
+      className="bg-creme flex w-screen flex-col items-center justify-center gap-10 py-20"
     >
       <div className="mb-10 flex flex-col justify-center gap-8 text-center">
         <h2 className="text-4xl lg:text-5xl">{t("title")}</h2>
