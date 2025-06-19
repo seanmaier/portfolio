@@ -8,7 +8,7 @@ import {
 import { useEffect, useRef } from "react";
 
 const fontSize = 20;
-const padding = 0;
+const padding = 2;
 const height = fontSize + padding;
 
 interface CounterProps {
