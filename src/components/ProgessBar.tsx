@@ -36,7 +36,7 @@ const ProgressBar = ({ progress = 10 }: Props) => {
           initial={{ width: 0 }}
           whileInView={{ width: `${progress}%` }}
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 5, ease: "easeOut" }}
+          transition={{ duration: 3, ease: "easeOut" }}
           className="h-2.5 rounded-full bg-blue-600"
           style={{ width: progress + "%" }}
         />

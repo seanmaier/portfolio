@@ -40,7 +40,7 @@ const HeroQuote = () => {
           <Reveal>"{t("description")}"</Reveal>
         </blockquote>
       </div>
-      <div className="bg-secondary-500 absolute bottom-0 flex h-20 w-20 translate-y-20 animate-bounce flex-col items-center justify-center rounded-full md:h-30 md:w-30">
+      <div className="bg-secondary-500 absolute bottom-0 flex h-24 w-24 translate-y-20 animate-bounce flex-col items-center justify-center rounded-full md:h-30 md:w-30 md:translate-y-40">
         <span className="flex flex-col text-[13px] font-bold md:text-xl">
           {t("scrollDown")}
         </span>
