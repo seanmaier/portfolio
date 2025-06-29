@@ -11,7 +11,7 @@ const Projects = () => {
   const [t] = useTranslation("global", { keyPrefix: "projects" });
 
   return (
-    <div
+    <section
       id="projects"
       className="bg-primary-500 flex flex-col items-center gap-20 px-5 py-20 lg:px-30 xl:px-30"
     >
@@ -102,7 +102,7 @@ const Projects = () => {
           </div>
         </ProjectCard>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-primary-500 sticky top-0 z-50 flex h-16 items-center justify-between px-3 md:px-20">
-      <div className="relative flex items-center gap-3">
+      <nav className="relative flex items-center gap-3">
         <span className="cursor-pointer text-white before:absolute before:left-0 before:h-[1px] before:w-[120%] before:-translate-y-1 before:bg-white before:content-['']">
           <FlipLink
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -26,70 +26,72 @@ const Navbar = () => {
             Sean Maier
           </FlipLink>
         </span>
-      </div>
+      </nav>
       <div className="flex gap-5">
-        <div className="hidden gap-3 lg:flex">
-          <Button
-            scale={1.2}
-            size="sm"
-            variant="text"
-            onClick={() =>
-              document
-                .getElementById("about")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            {t("about")}
-          </Button>
-          <Button
-            scale={1.2}
-            size="sm"
-            variant="text"
-            onClick={() =>
-              document
-                .getElementById("career")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            {t("career")}
-          </Button>
-          <Button
-            scale={1.2}
-            size="sm"
-            variant="text"
-            onClick={() =>
-              document
-                .getElementById("experience")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            {t("experience")}
-          </Button>
-          <Button
-            scale={1.2}
-            size="sm"
-            variant="text"
-            onClick={() =>
-              document
-                .getElementById("projects")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            {t("projects")}
-          </Button>
-          <Button
-            scale={1.2}
-            size="sm"
-            variant="text"
-            onClick={() =>
-              document
-                .getElementById("hobbies")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          >
-            Hobbies
-          </Button>
-        </div>
+        <nav>
+          <div className="hidden gap-3 lg:flex">
+            <Button
+              scale={1.2}
+              size="sm"
+              variant="text"
+              onClick={() =>
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              {t("about")}
+            </Button>
+            <Button
+              scale={1.2}
+              size="sm"
+              variant="text"
+              onClick={() =>
+                document
+                  .getElementById("career")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              {t("career")}
+            </Button>
+            <Button
+              scale={1.2}
+              size="sm"
+              variant="text"
+              onClick={() =>
+                document
+                  .getElementById("experience")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              {t("experience")}
+            </Button>
+            <Button
+              scale={1.2}
+              size="sm"
+              variant="text"
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              {t("projects")}
+            </Button>
+            <Button
+              scale={1.2}
+              size="sm"
+              variant="text"
+              onClick={() =>
+                document
+                  .getElementById("hobbies")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Hobbies
+            </Button>
+          </div>
+        </nav>
         <Button
           scale={1.2}
           variant="dotted"

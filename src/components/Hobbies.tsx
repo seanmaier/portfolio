@@ -35,7 +35,7 @@ const Hobbies = () => {
   ];
 
   return (
-    <div
+    <section
       id="hobbies"
       className="bg-creme flex flex-col items-center justify-center gap-20 py-20 md:px-20 lg:px-40 xl:px-80 2xl:px-[30%]"
     >
@@ -73,7 +73,7 @@ const Hobbies = () => {
         <h3 className="text-center">{t("subtitle2")}</h3>
         <ImageAccordian items={items} />
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -77,7 +77,7 @@ const Experience = () => {
   const [compact, setCompact] = useState(false);
 
   return (
-    <div
+    <section
       id="experience"
       className="bg-creme flex w-screen flex-col items-center justify-center gap-10 py-20"
     >
@@ -257,7 +257,7 @@ const Experience = () => {
           </div>
         </>
       )}
-    </div>
+    </section>
   );
 };
 

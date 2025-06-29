@@ -1,5 +1,5 @@
 import Button from "./button/Button";
-import resumePicture from "../assets/IMG_90951.png";
+import resumePicture from "../assets/profile.png";
 import { IoMailOutline } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import { CiLinkedin } from "react-icons/ci";
@@ -11,11 +11,11 @@ const AboutMe = () => {
   const [t] = useTranslation("global", { keyPrefix: "about" });
 
   return (
-    <div
+    <section
       id="about"
       className="bg-creme flex w-screen flex-col items-center justify-center gap-10 p-5 pb-10 md:justify-evenly md:px-30 lg:flex-row"
     >
-      <div className="flex max-w-lg flex-col gap-8 p-5">
+      <section className="flex max-w-lg flex-col gap-8 p-5">
         <Reveal>
           <h2 className="font-sans">{t("title")}</h2>
         </Reveal>
@@ -35,7 +35,7 @@ const AboutMe = () => {
         >
           <Reveal>linkedin.com/in/maiersean</Reveal>
         </Button>
-      </div>
+      </section>
 
       <motion.div
         whileHover={{ scale: 1.03, rotate: -2 }}
@@ -84,7 +84,7 @@ const AboutMe = () => {
           </Button>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 export default AboutMe;

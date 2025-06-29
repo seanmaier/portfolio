@@ -21,7 +21,7 @@ const Hero = () => {
   }, [animate, scope]);
 
   return (
-    <div id="hero" className="bg-primary-500 flex-col pb-30">
+    <section id="hero" className="bg-primary-500 flex-col pb-30">
       <div className="flex flex-col items-center justify-center p-5 pb-0 md:flex-row md:gap-8 md:p-20 lg:justify-between">
         <div className="relative flex flex-1 items-center justify-center md:basis-[60%] lg:basis-0">
           <motion.span
@@ -36,10 +36,13 @@ const Hero = () => {
             alt={t("Picture of me")}
           />
         </div>
+        <div className="hidden">
+          <h1>Portfolio Website</h1>
+        </div>
         <div className="relative flex flex-1 items-center justify-center md:gap-8">
-          <h1 className="font-birthstone absolute z-30 h-20 -translate-y-40 text-8xl text-white md:right-0 md:-translate-x-10 md:text-[150px] lg:-translate-y-70 lg:text-[200px] xl:text-[250px]">
+          <p className="font-birthstone absolute z-30 h-20 -translate-y-40 text-8xl text-white md:right-0 md:-translate-x-10 md:text-[150px] lg:-translate-y-70 lg:text-[200px] xl:text-[250px]">
             {t("title")}
-          </h1>
+          </p>
           <p className="font-birthstone absolute z-30 h-20 -translate-y-20 text-8xl text-transparent drop-shadow-sm [-webkit-text-stroke:2px_#f9b21d] [text-stroke:2px_#f9b21d] md:right-0 md:-translate-x-10 md:-translate-y-15 md:text-[150px] lg:-translate-y-40 lg:text-[200px] xl:text-[250px]">
             {t("title")}
           </p>
@@ -51,7 +54,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

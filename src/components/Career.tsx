@@ -5,7 +5,7 @@ const Career = () => {
   const [t] = useTranslation("global", { keyPrefix: "career" });
 
   return (
-    <div id="career" className="main bg-primary-500 gap-10">
+    <section id="career" className="main bg-primary-500 gap-10">
       <Reveal>
         <h2 className="text-white before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:bg-white before:content-['']">
           {t("title")}
@@ -157,7 +157,7 @@ const Career = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

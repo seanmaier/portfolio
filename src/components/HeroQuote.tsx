@@ -6,7 +6,7 @@ const HeroQuote = () => {
   const [t] = useTranslation("global", { keyPrefix: "hero" });
 
   return (
-    <div className="bg-primary-900 relative flex h-90 items-center justify-center px-10">
+    <section className="bg-primary-900 relative flex h-90 items-center justify-center px-10">
       <div className="relative hidden flex-1 items-center justify-center md:flex md:gap-8">
         <p className="font-birthstone absolute h-20 -translate-y-40 text-8xl text-white md:right-0 md:translate-x-10 md:text-[150px] lg:-translate-y-50 lg:text-[220px]">
           Resume
@@ -46,7 +46,7 @@ const HeroQuote = () => {
         </span>
         <FaArrowDown className="absolute bottom-3 text-xl md:text-3xl" />
       </div>
-    </div>
+    </section>
   );
 };
 

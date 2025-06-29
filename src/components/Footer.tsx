@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="bg-primary-900 text- flex flex-col gap-15 px-10 py-20 md:px-30">
+      <section className="bg-primary-900 text- flex flex-col gap-15 px-10 py-20 md:px-30">
         <div className="flex items-center justify-between gap-4">
           <p className="text-sm text-white">
             © {new Date().getFullYear()} - {t("rights")}
@@ -71,7 +71,7 @@ const Footer = () => {
             {t("made-with")} ❤️ {t("by")}
           </p>
         </div>
-      </div>
+      </section>
     </footer>
   );
 };

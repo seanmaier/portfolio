@@ -33,7 +33,7 @@ const Certificates = () => {
   const [t] = useTranslation("global", { keyPrefix: "certificates" });
 
   return (
-    <div
+    <section
       id="certificates"
       className="bg-primary-500 relative flex flex-col items-center gap-20 overflow-hidden py-14 text-white"
     >
@@ -41,7 +41,7 @@ const Certificates = () => {
       <div className="h-[20rem] md:h-[30rem] lg:h-[40rem]">
         <InfiniteScroll images={images} />
       </div>
-    </div>
+    </section>
   );
 };
 
