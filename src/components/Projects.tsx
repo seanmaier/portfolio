@@ -25,6 +25,33 @@ const Projects = () => {
       </div>
       <div className="flex flex-col justify-center gap-10 lg:flex-row lg:flex-wrap">
         <ProjectCard
+            link="https://github.com/seanmaier/skatfreunde-backend"
+          title={"Skatfreunde Jöllenbeck"}
+          badges={[
+            "React",
+            "React-Router",
+            "React-Forms",
+            "Zod",
+            "TypeScript",
+            "C#",
+            "EF Core",
+            "REST API",
+          ]}
+        >
+          <motion.img
+            whileHover={{ rotate: 5 }}
+            className="bg-creme w-80 rounded-2xl p-5 shadow-lg shadow-gray-800 outline-2"
+            src={skat}
+          />
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+            <Reveal>{t("skatfreunde-description-1")}</Reveal>
+            <br />
+            <Reveal>
+              <br /> {t("skatfreunde-description-2")}
+            </Reveal>
+          </div>
+        </ProjectCard>
+        <ProjectCard
           link="https://github.com/lukaslangrock/backend-chan"
           title="ThouChat - Hackathon"
           badges={["React", "TypeScript", "C#", "WebSockets"]}
@@ -61,34 +88,7 @@ const Projects = () => {
           </div>
         </ProjectCard>
         <ProjectCard
-          disabled
-          title={"Skatfreunde Jöllenbeck"}
-          badges={[
-            "React",
-            "React-Router",
-            "React-Forms",
-            "Zod",
-            "TypeScript",
-            "C#",
-            "EF Core",
-            "REST API",
-          ]}
-        >
-          <motion.img
-            whileHover={{ rotate: 5 }}
-            className="bg-creme w-80 rounded-2xl p-5 shadow-lg shadow-gray-800 outline-2"
-            src={skat}
-          />
-          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            <Reveal>{t("skatfreunde-description-1")}</Reveal>
-            <br />
-            <Reveal>
-              <br /> {t("skatfreunde-description-2")}
-            </Reveal>
-          </div>
-        </ProjectCard>
-        <ProjectCard
-          noButton
+            link="https://github.com/seanmaier/portfolio"
           title={"Portfolio Website"}
           badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
         >
