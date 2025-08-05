@@ -48,7 +48,7 @@
   "projects": {
     "title": "Projects",
     "description": "Projects I have worked on:",
-    "check-out": "Check out",
+    "check-out": "Check out the code",
     "not-published": "Not published yet",
     "thouChat-description-1": "A chat application built with React, TypeScript and C# over a weekend. It allows users to create accounts, join chat rooms, and send messages in real-time with a catch. Via a switch the user sends his messages in a shakespearean style.",
     "thouChat-description-2": "This was my first time working with web sockets and in a larger team of young developers. I also learned how to present my work to a larger audience and showcase its features.",

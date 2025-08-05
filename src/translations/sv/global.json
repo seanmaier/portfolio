@@ -48,7 +48,7 @@
   "projects": {
     "title": "Projekt",
     "description": "Projekt jag har arbetat med:",
-    "check-out": "Kolla in",
+    "check-out": "Kolla in koden",
     "not-published": "Inte publicerat än",
     "thouChat-description-1": "En chattapplikation byggd med React, TypeScript och C# under en helg. Den låter användare skapa konton, gå med i chattrum och skicka meddelanden i realtid - med en twist. Med en knapptryckning kan användaren skicka sina meddelanden i shakespeariansk stil.",
     "thouChat-description-2": "Detta var första gången jag arbetade med webbsockets och i ett större team av unga utvecklare. Jag lärde mig också hur man presenterar sitt arbete för en större publik och visar upp dess funktioner.",
