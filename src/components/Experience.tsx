@@ -1,25 +1,16 @@
 import { useTranslation } from "react-i18next";
 import BigBadge from "./BigBadge";
 import { BiLogoTypescript } from "react-icons/bi";
-import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
-import { SiReacthookform } from "react-icons/si";
-import { SiReactrouter } from "react-icons/si";
-import { SiZod } from "react-icons/si";
 import { PiFileCSharp } from "react-icons/pi";
 import { DiDotnet } from "react-icons/di";
 import { AiOutlineApi } from "react-icons/ai";
 import { FaDatabase } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
-import { SiPandas } from "react-icons/si";
-import { SiNumpy } from "react-icons/si";
-import { SiPlotly } from "react-icons/si";
+import { SiGraphql } from "react-icons/si";
+import { VscTerminalBash } from "react-icons/vsc";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { SiSqlite } from "react-icons/si";
-import { FaWpforms } from "react-icons/fa";
 import { useState, type ReactNode } from "react";
 import { motion } from "motion/react";
 
@@ -29,38 +20,26 @@ interface Badges {
   frontend: Badge[];
   backend: Badge[];
   databases: Badge[];
-  analytics: Badge[];
 }
 
 const badges: Badges = {
   frontend: [
-    { skill: "HTML", icon: <FaHtml5 /> },
-    { skill: "CSS", icon: <FaCss3Alt /> },
-    { skill: "JavaScript", icon: <IoLogoJavascript /> },
     { skill: "TypeScript", icon: <BiLogoTypescript /> },
-    { skill: "Tailwind", icon: <RiTailwindCssFill /> },
     { skill: "React", icon: <FaReact /> },
-    { skill: "React-Hook-Forms", icon: <SiReacthookform /> },
-    { skill: "React-Router", icon: <SiReactrouter /> },
-    { skill: "Zustand" },
-    { skill: "Zod", icon: <SiZod /> },
-    { skill: "WPF", icon: <FaWpforms /> },
+    { skill: "Tailwind", icon: <RiTailwindCssFill /> },
   ],
   backend: [
     { skill: "C#", icon: <PiFileCSharp /> },
-    { skill: "ASP.NET Core", icon: <DiDotnet /> },
+    { skill: ".NET", icon: <DiDotnet /> },
+    { skill: "Blazor Server" },
     { skill: "EF Core", icon: <FaDatabase /> },
+    { skill: "GraphQL", icon: <SiGraphql /> },
+    { skill: "CLI Tools", icon: <VscTerminalBash /> },
     { skill: "REST API", icon: <AiOutlineApi /> },
   ],
   databases: [
     { skill: "PostgreSQL", icon: <BiLogoPostgresql /> },
     { skill: "SQLite", icon: <SiSqlite /> },
-  ],
-  analytics: [
-    { skill: "Python", icon: <FaPython /> },
-    { skill: "Pandas", icon: <SiPandas /> },
-    { skill: "NumPy", icon: <SiNumpy /> },
-    { skill: "Matplotlib", icon: <SiPlotly /> },
   ],
 };
 
@@ -97,13 +76,13 @@ const Experience = () => {
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.frontend.map((badge, i, arr) => (
               <motion.div
+                key={i}
                 whileHover={{ scale: 1.05 }}
                 initial={{ opacity: 0, scale: 0, y: 50 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
                 <BigBadge
-                  key={i}
                   className="text-white"
                   compact
                   style={
@@ -122,13 +101,13 @@ const Experience = () => {
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.backend.map((badge, i, arr) => (
               <motion.div
+                key={i}
                 whileHover={{ scale: 1.05 }}
                 initial={{ opacity: 0, scale: 0, y: 50 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
                 <BigBadge
-                  key={i}
                   className="text-white"
                   compact
                   style={
@@ -147,38 +126,13 @@ const Experience = () => {
           <div className="flex max-w-xl flex-wrap justify-center gap-5">
             {badges.databases.map((badge, i, arr) => (
               <motion.div
+                key={i}
                 whileHover={{ scale: 1.05 }}
                 initial={{ opacity: 0, scale: 0, y: 50 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
                 <BigBadge
-                  key={i}
-                  className="text-white"
-                  compact
-                  style={
-                    {
-                      "--n": i + 1,
-                      "--count": arr.length,
-                    } as React.CSSProperties
-                  }
-                  title={badge.skill}
-                  icon={badge.icon}
-                />
-              </motion.div>
-            ))}
-          </div>
-          <h3>{t("analytics")}</h3>
-          <div className="flex max-w-xl flex-wrap justify-center gap-5">
-            {badges.analytics.map((badge, i, arr) => (
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, scale: 0, y: 50 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <BigBadge
-                  key={i}
                   className="text-white"
                   compact
                   style={
@@ -198,7 +152,7 @@ const Experience = () => {
         <>
           <h3>Frontend</h3>
           <div className="wrapper">
-            {badges.frontend.map((badge, i, arr) => (
+            {repeatToLength(badges.frontend, 8).map((badge, i, arr) => (
               <BigBadge
                 key={i}
                 className="itemLeft"
@@ -233,20 +187,6 @@ const Experience = () => {
               <BigBadge
                 key={i}
                 className="itemLeft"
-                style={
-                  { "--n": i + 1, "--count": arr.length } as React.CSSProperties
-                }
-                title={badge.skill}
-                icon={badge.icon}
-              />
-            ))}
-          </div>
-          <h3>{t("analytics")}</h3>
-          <div className="wrapper">
-            {repeatToLength(badges.analytics, 8).map((badge, i, arr) => (
-              <BigBadge
-                key={i}
-                className="itemRight"
                 style={
                   { "--n": i + 1, "--count": arr.length } as React.CSSProperties
                 }
