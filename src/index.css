@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -326,18 +325,6 @@ ul li .date {
     rgba(0, 0, 0, 1) 80%,
     rgba(0, 0, 0, 0)
   );
-}
-
-@keyframes scrollLeft {
-  to {
-    left: -200px;
-  }
-}
-
-@keyframes scrollRight {
-  to {
-    right: -200px;
-  }
 }
 
 .itemLeft,
