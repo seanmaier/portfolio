@@ -1,5 +1,5 @@
 // LoadingScreen.tsx
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 interface Props {

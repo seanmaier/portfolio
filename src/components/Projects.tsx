@@ -42,6 +42,7 @@ const Projects = () => {
             whileHover={{ rotate: 5 }}
             className="bg-creme w-80 rounded-2xl p-5 shadow-lg shadow-gray-800 outline-2"
             src={skat}
+            loading="lazy"
           />
           <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("skatfreunde-description-1")}</Reveal>
@@ -60,6 +61,7 @@ const Projects = () => {
             whileHover={{ rotate: 5 }}
             className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={thouChat}
+            loading="lazy"
           />
           <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("thouChat-description-1")}</Reveal>
@@ -78,6 +80,7 @@ const Projects = () => {
             whileHover={{ rotate: 5 }}
             className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
             src={macroForge}
+            loading="lazy"
           />
           <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("macroForge-description-1")}</Reveal>
@@ -96,6 +99,7 @@ const Projects = () => {
             whileHover={{ rotate: 5 }}
             className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
             src={portfolio}
+            loading="lazy"
           />
           <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("portfolio-description")}</Reveal>

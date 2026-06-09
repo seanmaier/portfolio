@@ -33,7 +33,8 @@ const ImageAccordian = ({ items }: Props) => {
                 src={item.url}
                 width="960"
                 height="480"
-                alt="Image 01"
+                loading="lazy"
+                alt={item.title}
               />
             </article>
           );
