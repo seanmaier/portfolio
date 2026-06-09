@@ -16,56 +16,32 @@ const Career = () => {
           <li>
             <Reveal>
               <h3 className="text-white">
-                {t("mehrwerk-title")}{" "}
+                {t("layer2-title")}{" "}
                 <a
                   target="_blank"
-                  href="https://www.mehrwerk.com/en/"
-                  className="hover:text-mehrwerkblue group text-mehrwerkblue relative transition-colors duration-200 md:text-white"
+                  href="https://www.layer2.de/"
+                  className="hover:text-secondary-500 group relative text-secondary-500 transition-colors duration-200 md:text-white"
                 >
                   <span className="inline-block">
-                    Mehrwerk
+                    layer2 collaboration works
                     <img
-                      src="https://www.mehrwerk.com/favicon.ico"
+                      src="https://www.layer2.de/favicon.ico"
                       className="ml-2 inline-block h-7 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
-                      alt="Mehrwerk logo"
+                      alt="layer2 logo"
                     />
                   </span>
                 </a>
               </h3>
             </Reveal>
             <span className="date">
-              <Reveal>{t("mehrwerk-date")}</Reveal>
-            </span>
-            <span className="circle"></span>
-
-            <div className="text-md text-white">
-              <Reveal>{t("mehrwerk-description")}</Reveal>
-            </div>
-          </li>
-          <li>
-            <Reveal>
-              <h3 className="leading-tight text-white">
-                {t("staatsanwaltschaft-title")}{" "}
-                <a
-                  target="_blank"
-                  href="https://www.sta-bielefeld.nrw.de/"
-                  className="hover:text-staatsanwaltsblau group text-staatsanwaltsblau relative transition-colors duration-200 md:text-white"
-                >
-                  Staatsanwaltschaft Bielefeld
-                  <img
-                    src="https://www.sta-bielefeld.nrw.de/favicon.ico"
-                    className="ml-2 inline-block h-7 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
-                    alt="Staatsanwaltschaft Bielefeld logo"
-                  />
-                </a>
-              </h3>
-            </Reveal>
-            <span className="date">
-              <Reveal>{t("staatsanwaltschaft-date")}</Reveal>
+              <Reveal>{t("layer2-date")}</Reveal>
             </span>
             <span className="circle"></span>
             <div className="text-md text-white">
-              <Reveal>{t("staatsanwaltschaft-description")}</Reveal>
+              <Reveal>{t("layer2-description-1")}</Reveal>
+              <br />
+              <br />
+              <Reveal>{t("layer2-description-2")}</Reveal>
             </div>
           </li>
           <li>
@@ -75,7 +51,7 @@ const Career = () => {
                 <a
                   target="_blank"
                   href="https://paderborn-ist-informatik.de/"
-                  className="hover:text-pitred group text-pitred relative transition-colors duration-200 md:text-white"
+                  className="hover:text-pitred group relative text-pitred transition-colors duration-200 md:text-white"
                 >
                   PIT
                   <img
@@ -100,13 +76,42 @@ const Career = () => {
           <li>
             <Reveal>
               <h3 className="leading-tight text-white">
+                {t("hoermann-title")}{" "}
+                <a
+                  target="_blank"
+                  href="https://www.hoermann.de/"
+                  className="hover:text-hoermannblue group relative text-hoermannblue transition-colors duration-200 md:text-white"
+                >
+                  Hörmann
+                  <img
+                    src="https://www.hoermann.de/favicon.ico"
+                    className="ml-2 inline-block h-7 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
+                    alt="Hoermann logo"
+                  />
+                </a>
+              </h3>
+            </Reveal>
+            <span className="date">
+              <Reveal>{t("hoermann-date")}</Reveal>
+            </span>
+            <span className="circle"></span>
+            <div className="text-md text-white">
+              <Reveal>{t("hoermann-description-1")}</Reveal>
+              <br />
+              <br />
+              <Reveal>{t("hoermann-description-2")}</Reveal>
+            </div>
+          </li>
+          <li>
+            <Reveal>
+              <h3 className="leading-tight text-white">
                 {t("bib-title")}{" "}
                 <a
                   target="_blank"
                   href="https://www.bib.de/"
                   className="hover:text-bib group bib relative transition-colors duration-200 md:text-white"
                 >
-                  bib Internation College
+                  bib International College
                   <img
                     src="https://icons.duckduckgo.com/ip3/www.bib.de.ico"
                     className="ml-2 inline-block h-7 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
@@ -128,31 +133,30 @@ const Career = () => {
           </li>
           <li>
             <Reveal>
-              <h3 className="leading-tight text-white">
-                {t("hoermann-title")}{" "}
+              <h3 className="text-white">
+                {t("mehrwerk-title")}{" "}
                 <a
                   target="_blank"
-                  href="https://www.hoermann.de/"
-                  className="hover:text-hoermannblue group text-hoermannblue relative transition-colors duration-200 md:text-white"
+                  href="https://www.mehrwerk.com/en/"
+                  className="hover:text-mehrwerkblue group relative text-mehrwerkblue transition-colors duration-200 md:text-white"
                 >
-                  Hörmann
-                  <img
-                    src="https://www.hoermann.de/favicon.ico"
-                    className="ml-2 inline-block h-7 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
-                    alt="Hoermann logo"
-                  />
+                  <span className="inline-block">
+                    Mehrwerk
+                    <img
+                      src="https://www.mehrwerk.com/favicon.ico"
+                      className="ml-2 inline-block h-7 transition-opacity duration-200 md:opacity-0 md:group-hover:opacity-100"
+                      alt="Mehrwerk logo"
+                    />
+                  </span>
                 </a>
               </h3>
             </Reveal>
             <span className="date">
-              <Reveal>{t("hoermann-date")}</Reveal>
+              <Reveal>{t("mehrwerk-date")}</Reveal>
             </span>
             <span className="circle"></span>
             <div className="text-md text-white">
-              <Reveal>{t("hoermann-description-1")}</Reveal>
-              <br />
-              <br />
-              <Reveal>{t("hoermann-description-2")}</Reveal>
+              <Reveal>{t("mehrwerk-description")}</Reveal>
             </div>
           </li>
         </ul>

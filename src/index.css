@@ -222,7 +222,7 @@ ul li .date {
   left: -30px;
   transform: translate(-50%, -50%);
 }
-.container ul li:last-child .circle {
+.container ul li:first-child .circle {
   animation: wave 2s infinite ease-in-out;
 }
 @keyframes wave {
