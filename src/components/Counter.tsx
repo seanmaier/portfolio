@@ -4,7 +4,7 @@ import {
   useInView,
   useSpring,
   useTransform,
-} from "framer-motion";
+} from "motion/react";
 import { useEffect, useRef } from "react";
 
 const fontSize = 20;
