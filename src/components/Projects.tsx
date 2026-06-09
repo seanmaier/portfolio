@@ -25,13 +25,11 @@ const Projects = () => {
       </div>
       <div className="flex flex-col justify-center gap-10 lg:flex-row lg:flex-wrap">
         <ProjectCard
-            link="https://github.com/seanmaier/skatfreunde-backend"
-          title={"Skatfreunde Jöllenbeck"}
+          link="https://skatfreunde-bielefeld.de/"
+          title={"Skatfreunde Bielefeld"}
+          live
           badges={[
             "React",
-            "React-Router",
-            "React-Forms",
-            "Zod",
             "TypeScript",
             "C#",
             "EF Core",
@@ -91,8 +89,9 @@ const Projects = () => {
           </div>
         </ProjectCard>
         <ProjectCard
-            link="https://github.com/seanmaier/portfolio"
+          link="https://github.com/seanmaier/portfolio"
           title={"Portfolio Website"}
+          live
           badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
         >
           <motion.img
