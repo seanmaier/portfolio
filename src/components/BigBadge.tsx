@@ -1,4 +1,5 @@
 import React, { type ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -16,7 +17,12 @@ const BigBadge = ({
 }: Props) => {
   return (
     <div
-      className={`font-jetbrains flex items-center justify-center gap-2 px-3 text-lg text-gray-500 opacity-90 ${compact && "bg-tertiary-500 rounded-2xl py-2 outline-2"} ${className}`}
+      id={id}
+      className={twMerge(
+        "font-jetbrains flex items-center justify-center gap-2 px-3 text-lg text-gray-500 opacity-90",
+        compact && "bg-tertiary-500 rounded-2xl py-2 outline-2",
+        className,
+      )}
       {...rest}
     >
       {icon && <span className="ml-2 text-2xl">{icon}</span>}

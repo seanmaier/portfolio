@@ -2,18 +2,14 @@ import { useTranslation } from "react-i18next";
 import BigBadge from "./BigBadge";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaDatabase, FaLinux } from "react-icons/fa";
 import { PiFileCSharp } from "react-icons/pi";
 import { DiDotnet } from "react-icons/di";
 import { AiOutlineApi } from "react-icons/ai";
-import { FaDatabase } from "react-icons/fa";
-import { SiGraphql } from "react-icons/si";
-import { VscTerminalBash } from "react-icons/vsc";
+import { SiGraphql, SiSqlite, SiDocker, SiGithubactions } from "react-icons/si";
+import { VscTerminalBash, VscAzure } from "react-icons/vsc";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { SiSqlite, SiDocker, SiGithubactions } from "react-icons/si";
-import { FaLinux } from "react-icons/fa";
-import { VscAzure } from "react-icons/vsc";
-import { useState, type ReactNode } from "react";
+import React, { useState, type ReactNode } from "react";
 import { motion } from "motion/react";
 
 type Badge = { skill: string; icon?: ReactNode };
@@ -53,12 +49,46 @@ const badges: Badges = {
 };
 
 function repeatToLength<T>(arr: T[], minLength: number): T[] {
-  const result = [];
-  while (result.length < minLength) {
-    result.push(...arr);
-  }
+  const result: T[] = [];
+  while (result.length < minLength) result.push(...arr);
   return result.slice(0, minLength);
 }
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.07 } },
+};
+
+const badgeVariants = {
+  hidden: { opacity: 0, y: 18, scale: 0.9 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.3 } },
+};
+
+interface GroupProps {
+  title: string;
+  items: Badge[];
+}
+
+const CompactGroup = ({ title, items }: GroupProps) => (
+  <div className="flex flex-col gap-4">
+    <h3 className="border-primary-300 border-b-2 pb-2 text-2xl font-bold">
+      {title}
+    </h3>
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      className="flex flex-wrap gap-3"
+    >
+      {items.map((badge, i) => (
+        <motion.div key={i} variants={badgeVariants}>
+          <BigBadge compact className="text-white" title={badge.skill} icon={badge.icon} />
+        </motion.div>
+      ))}
+    </motion.div>
+  </div>
+);
 
 const Experience = () => {
   const [t] = useTranslation("global", { keyPrefix: "experience" });
@@ -80,107 +110,11 @@ const Experience = () => {
         </div>
       </div>
       {compact ? (
-        <div className="flex flex-col items-center gap-15">
-          <h3>Frontend</h3>
-          <div className="flex max-w-xl flex-wrap justify-center gap-5">
-            {badges.frontend.map((badge, i, arr) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, scale: 0, y: 50 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <BigBadge
-                  className="text-white"
-                  compact
-                  style={
-                    {
-                      "--n": i + 1,
-                      "--count": arr.length,
-                    } as React.CSSProperties
-                  }
-                  title={badge.skill}
-                  icon={badge.icon}
-                />
-              </motion.div>
-            ))}
-          </div>
-          <h3>Backend</h3>
-          <div className="flex max-w-xl flex-wrap justify-center gap-5">
-            {badges.backend.map((badge, i, arr) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, scale: 0, y: 50 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <BigBadge
-                  className="text-white"
-                  compact
-                  style={
-                    {
-                      "--n": i + 1,
-                      "--count": arr.length,
-                    } as React.CSSProperties
-                  }
-                  title={badge.skill}
-                  icon={badge.icon}
-                />
-              </motion.div>
-            ))}
-          </div>
-          <h3>{t("databases")}</h3>
-          <div className="flex max-w-xl flex-wrap justify-center gap-5">
-            {badges.databases.map((badge, i, arr) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, scale: 0, y: 50 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <BigBadge
-                  className="text-white"
-                  compact
-                  style={
-                    {
-                      "--n": i + 1,
-                      "--count": arr.length,
-                    } as React.CSSProperties
-                  }
-                  title={badge.skill}
-                  icon={badge.icon}
-                />
-              </motion.div>
-            ))}
-          </div>
-          <h3>{t("devops")}</h3>
-          <div className="flex max-w-xl flex-wrap justify-center gap-5">
-            {badges.devops.map((badge, i, arr) => (
-              <motion.div
-                key={i}
-                whileHover={{ scale: 1.05 }}
-                initial={{ opacity: 0, scale: 0, y: 50 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                <BigBadge
-                  className="text-white"
-                  compact
-                  style={
-                    {
-                      "--n": i + 1,
-                      "--count": arr.length,
-                    } as React.CSSProperties
-                  }
-                  title={badge.skill}
-                  icon={badge.icon}
-                />
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid w-full max-w-4xl gap-10 px-8 md:grid-cols-2">
+          <CompactGroup title="Frontend" items={badges.frontend} />
+          <CompactGroup title="Backend" items={badges.backend} />
+          <CompactGroup title={t("databases")} items={badges.databases} />
+          <CompactGroup title={t("devops")} items={badges.devops} />
         </div>
       ) : (
         <>
@@ -190,12 +124,7 @@ const Experience = () => {
               <BigBadge
                 key={i}
                 className="itemLeft"
-                style={
-                  {
-                    "--n": i + 1,
-                    "--count": arr.length,
-                  } as React.CSSProperties
-                }
+                style={{ "--n": i + 1, "--count": arr.length } as React.CSSProperties}
                 title={badge.skill}
                 icon={badge.icon}
               />
@@ -207,9 +136,7 @@ const Experience = () => {
               <BigBadge
                 key={i}
                 className="itemRight"
-                style={
-                  { "--n": i + 1, "--count": arr.length } as React.CSSProperties
-                }
+                style={{ "--n": i + 1, "--count": arr.length } as React.CSSProperties}
                 title={badge.skill}
                 icon={badge.icon}
               />
@@ -221,9 +148,7 @@ const Experience = () => {
               <BigBadge
                 key={i}
                 className="itemLeft"
-                style={
-                  { "--n": i + 1, "--count": arr.length } as React.CSSProperties
-                }
+                style={{ "--n": i + 1, "--count": arr.length } as React.CSSProperties}
                 title={badge.skill}
                 icon={badge.icon}
               />
@@ -235,9 +160,7 @@ const Experience = () => {
               <BigBadge
                 key={i}
                 className="itemRight"
-                style={
-                  { "--n": i + 1, "--count": arr.length } as React.CSSProperties
-                }
+                style={{ "--n": i + 1, "--count": arr.length } as React.CSSProperties}
                 title={badge.skill}
                 icon={badge.icon}
               />
