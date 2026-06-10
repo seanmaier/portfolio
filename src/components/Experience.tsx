@@ -10,7 +10,9 @@ import { FaDatabase } from "react-icons/fa";
 import { SiGraphql } from "react-icons/si";
 import { VscTerminalBash } from "react-icons/vsc";
 import { BiLogoPostgresql } from "react-icons/bi";
-import { SiSqlite } from "react-icons/si";
+import { SiSqlite, SiDocker, SiGithubactions } from "react-icons/si";
+import { FaLinux } from "react-icons/fa";
+import { VscAzure } from "react-icons/vsc";
 import { useState, type ReactNode } from "react";
 import { motion } from "motion/react";
 
@@ -20,6 +22,7 @@ interface Badges {
   frontend: Badge[];
   backend: Badge[];
   databases: Badge[];
+  devops: Badge[];
 }
 
 const badges: Badges = {
@@ -40,6 +43,12 @@ const badges: Badges = {
   databases: [
     { skill: "PostgreSQL", icon: <BiLogoPostgresql /> },
     { skill: "SQLite", icon: <SiSqlite /> },
+  ],
+  devops: [
+    { skill: "Azure", icon: <VscAzure /> },
+    { skill: "Docker", icon: <SiDocker /> },
+    { skill: "Linux", icon: <FaLinux /> },
+    { skill: "CI/CD", icon: <SiGithubactions /> },
   ],
 };
 
@@ -147,6 +156,31 @@ const Experience = () => {
               </motion.div>
             ))}
           </div>
+          <h3>{t("devops")}</h3>
+          <div className="flex max-w-xl flex-wrap justify-center gap-5">
+            {badges.devops.map((badge, i, arr) => (
+              <motion.div
+                key={i}
+                whileHover={{ scale: 1.05 }}
+                initial={{ opacity: 0, scale: 0, y: 50 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <BigBadge
+                  className="text-white"
+                  compact
+                  style={
+                    {
+                      "--n": i + 1,
+                      "--count": arr.length,
+                    } as React.CSSProperties
+                  }
+                  title={badge.skill}
+                  icon={badge.icon}
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       ) : (
         <>
@@ -187,6 +221,20 @@ const Experience = () => {
               <BigBadge
                 key={i}
                 className="itemLeft"
+                style={
+                  { "--n": i + 1, "--count": arr.length } as React.CSSProperties
+                }
+                title={badge.skill}
+                icon={badge.icon}
+              />
+            ))}
+          </div>
+          <h3>{t("devops")}</h3>
+          <div className="wrapper">
+            {repeatToLength(badges.devops, 8).map((badge, i, arr) => (
+              <BigBadge
+                key={i}
+                className="itemRight"
                 style={
                   { "--n": i + 1, "--count": arr.length } as React.CSSProperties
                 }

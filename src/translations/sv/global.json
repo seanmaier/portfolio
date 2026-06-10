@@ -43,7 +43,8 @@
   "experience": {
     "title": "Teknologier jag har erfarenhet av:",
     "compact": "Kompakt vy",
-    "databases": "Databaser"
+    "databases": "Databaser",
+    "devops": "DevOps & Infrastruktur"
   },
   "projects": {
     "title": "Projekt",

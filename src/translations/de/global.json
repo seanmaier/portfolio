@@ -43,7 +43,8 @@
   "experience": {
     "title": "Technologien, mit denen ich Erfahrung habe:",
     "compact": "Kompakte Ansicht",
-    "databases": "Datenbanken"
+    "databases": "Datenbanken",
+    "devops": "DevOps & Infrastruktur"
   },
   "projects": {
     "title": "Projekte",
