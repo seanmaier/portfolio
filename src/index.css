@@ -239,6 +239,29 @@ ul li .date {
   }
 }
 
+@keyframes liveGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 6px 1px rgba(74, 222, 128, 0.4),
+      0 0 18px 2px rgba(74, 222, 128, 0.15),
+      4px 4px 15px rgba(0, 0, 0, 0.5);
+    border-color: rgba(74, 222, 128, 0.55);
+  }
+  50% {
+    box-shadow:
+      0 0 14px 3px rgba(74, 222, 128, 0.75),
+      0 0 36px 6px rgba(74, 222, 128, 0.3),
+      4px 4px 15px rgba(0, 0, 0, 0.5);
+    border-color: rgba(74, 222, 128, 1);
+  }
+}
+
+.live-card {
+  border: 2px solid rgba(74, 222, 128, 0.55);
+  animation: liveGlow 2.5s ease-in-out infinite;
+}
+
 @media screen and (max-width: 1224px) {
   .container {
     width: 85%;

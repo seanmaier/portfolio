@@ -31,7 +31,7 @@ export const ProjectCard = ({
       transition={{ type: "spring", stiffness: 300, damping: 20, mass: 1 }}
       className="flex justify-center"
     >
-      <div className="from-tertiary-300 to-secondary-500 lg:max-w-1xl flex max-w-lg flex-col gap-5 rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black">
+      <div className={`from-tertiary-300 to-secondary-500 lg:max-w-1xl flex max-w-lg flex-col gap-5 rounded-2xl bg-gradient-to-br p-10 shadow-md shadow-black${live ? " live-card" : ""}`}>
         <div className="flex items-start justify-between gap-2">
           <h2 className="font-jetbrains text-center text-4xl font-bold text-white">
             <Reveal>{title}</Reveal>

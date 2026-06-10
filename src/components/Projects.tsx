@@ -51,6 +51,22 @@ const Projects = () => {
           </div>
         </ProjectCard>
         <ProjectCard
+          link="https://github.com/seanmaier/portfolio"
+          title={"Portfolio Website"}
+          live
+          badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
+        >
+          <motion.img
+            whileHover={{ rotate: 5 }}
+            className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
+            src={portfolio}
+            loading="lazy"
+          />
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+            <Reveal>{t("portfolio-description")}</Reveal>
+          </div>
+        </ProjectCard>
+        <ProjectCard
           link="https://github.com/lukaslangrock/backend-chan"
           title="ThouChat - Hackathon"
           badges={["React", "TypeScript", "C#", "WebSockets"]}
@@ -86,22 +102,6 @@ const Projects = () => {
             <Reveal>
               <br /> {t("macroForge-description-2")}
             </Reveal>
-          </div>
-        </ProjectCard>
-        <ProjectCard
-          link="https://github.com/seanmaier/portfolio"
-          title={"Portfolio Website"}
-          live
-          badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
-        >
-          <motion.img
-            whileHover={{ rotate: 5 }}
-            className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
-            src={portfolio}
-            loading="lazy"
-          />
-          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            <Reveal>{t("portfolio-description")}</Reveal>
           </div>
         </ProjectCard>
       </div>
