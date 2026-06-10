@@ -53,7 +53,6 @@ const Projects = () => {
         <ProjectCard
           link="https://github.com/seanmaier/portfolio"
           title={"Portfolio Website"}
-          live
           badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
         >
           <motion.img
