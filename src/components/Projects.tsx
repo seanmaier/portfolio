@@ -25,13 +25,11 @@ const Projects = () => {
       </div>
       <div className="flex flex-col justify-center gap-10 lg:flex-row lg:flex-wrap">
         <ProjectCard
-            link="https://github.com/seanmaier/skatfreunde-backend"
-          title={"Skatfreunde Jöllenbeck"}
+          link="https://skatfreunde-bielefeld.de/"
+          title={"Skatfreunde Bielefeld"}
+          live
           badges={[
             "React",
-            "React-Router",
-            "React-Forms",
-            "Zod",
             "TypeScript",
             "C#",
             "EF Core",
@@ -50,6 +48,21 @@ const Projects = () => {
             <Reveal>
               <br /> {t("skatfreunde-description-2")}
             </Reveal>
+          </div>
+        </ProjectCard>
+        <ProjectCard
+          link="https://github.com/seanmaier/portfolio"
+          title={"Portfolio Website"}
+          badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
+        >
+          <motion.img
+            whileHover={{ rotate: 5 }}
+            className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
+            src={portfolio}
+            loading="lazy"
+          />
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+            <Reveal>{t("portfolio-description")}</Reveal>
           </div>
         </ProjectCard>
         <ProjectCard
@@ -88,21 +101,6 @@ const Projects = () => {
             <Reveal>
               <br /> {t("macroForge-description-2")}
             </Reveal>
-          </div>
-        </ProjectCard>
-        <ProjectCard
-            link="https://github.com/seanmaier/portfolio"
-          title={"Portfolio Website"}
-          badges={["React", "TypeScript", "Tailwind", "Animations", "Motion"]}
-        >
-          <motion.img
-            whileHover={{ rotate: 5 }}
-            className="w-80 rounded-2xl bg-gray-700 p-5 shadow-lg shadow-gray-800 outline-2"
-            src={portfolio}
-            loading="lazy"
-          />
-          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            <Reveal>{t("portfolio-description")}</Reveal>
           </div>
         </ProjectCard>
       </div>

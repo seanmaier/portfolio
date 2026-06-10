@@ -64,7 +64,7 @@ const Hobbies = () => {
           <div className="flex flex-col items-center gap-0.5">
             <p className="text-2xl font-bold">{t("swedish")}</p>
             <p className="font-semibold text-gray-500">{t("langLevel3")}</p>
-            <ProgressBar progress={10} />
+            <ProgressBar progress={30} />
           </div>
         </div>
       </div>
