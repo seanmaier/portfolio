@@ -1,30 +1,38 @@
 # Sean Maier
 
-> Junior Software Engineer at layer2 collaboration works (Germany). Fullstack developer with a focus on the backend, working mainly with C#/.NET, TypeScript and React. Languages: German (native), English (fluent), Swedish (beginner).
+> Junior Software Engineer at layer2 collaboration works (Germany). Fullstack developer with a focus on the backend. Main language C#/.NET, second language TypeScript/React. Languages: German (native), English (fluent), Swedish (beginner).
 
 This file summarizes the portfolio at https://seanmaier.org for AI agents and LLMs. The website itself is a client-rendered React app; all relevant content is reproduced here.
 
 ## Career
 
-- **Junior Software Engineer, layer2 collaboration works** (Feb 2026 – present): building software solutions for enterprise clients, designing solutions for clients, developing internal software tools, orchestrating coding agents. https://www.layer2.de/
-- **Apprentice Software Engineering, Hörmann** (Aug 2023 – Jan 2026): professional software development across various technologies; automation and optimization of internal processes; experience with ERP systems such as SAP. https://www.hoermann.de/
-- **Student Software Engineering, b.i.b. International College** (Aug 2023 – Jan 2026): dual study program in parallel with the Hörmann apprenticeship, focused on practical software development, project management and teamwork. https://www.bib.de/
-- **Hackathon, PIT – Paderborn ist Informatik** (Sep 2024): built a software solution for a real-world challenge in a team over one weekend. https://paderborn-ist-informatik.de/
-- **Internship, Mehrwerk** (Jan 2019 – Feb 2019): first hands-on experience in IT and software development. https://www.mehrwerk.com/en/
+- **Junior Software Engineer, layer2 collaboration works** (Feb 2026 – present): Microsoft 365 consultancy. Delivers client projects end to end, from gathering requirements with the client to implementation and deployment: web apps, backend integrations between Microsoft 365, SharePoint and client systems via REST APIs and Microsoft Graph, deployments with .NET Aspire and Bicep on Azure. Designed and built an internal generic tool for structure and data migrations. Works daily with AI coding agents, writes custom skills for them and automates processes with them. https://www.layer2.de/
+- **Dual vocational apprenticeship as a software developer, Hörmann and b.i.b. International College** (Aug 2023 – Jan 2026): built REST APIs, relational data models and automated tests for internal business applications at Hörmann and automated internal processes in an industrial environment. Gained experience with ERP systems such as SAP. The vocational school part took place at b.i.b. International College. https://www.hoermann.de/ · https://www.bib.de/
+- **Hackathon, PIT – Paderborn ist Informatik** (Sep 2024): built ThouChat in a team of four over one weekend. https://paderborn-ist-informatik.de/
+- **Internship, Mehrwerk** (Jan 2019 – Feb 2019): first hands-on experience in a professional software team. https://www.mehrwerk.com/en/
 
 ## Skills
 
-- Frontend: TypeScript, React, Tailwind CSS
-- Backend: C#, .NET, Blazor Server, EF Core, GraphQL, REST APIs, CLI tools
-- Databases: PostgreSQL, SQLite
-- DevOps & infrastructure: Azure, Docker, Linux, CI/CD
+- Backend: C#, .NET, ASP.NET Core, EF Core, Blazor Server, .NET Framework, REST APIs, GraphQL, WebSockets, CLI tools
+- Frontend: TypeScript, React, Next.js, Tailwind CSS
+- Databases: PostgreSQL, SQLite, Prisma, relational data modeling
+- Cloud & DevOps: Azure, .NET Aspire, Bicep, Docker, GitHub Actions, CI/CD, Linux (runs his own VPS with Docker and Portainer)
+- Microsoft 365: Microsoft Graph API, SharePoint integrations
+- AI: daily work with AI coding agents (Claude Code), writing custom agent skills, process automation
+- Interests: distributed systems, backend architecture, understanding why systems are built the way they are; software that does something good for the world and supports sustainability
 
 ## Projects
 
-- [Vita](https://vita.seanmaier.org/): fullstack tool for managing job applications. Generates print-ready CVs and cover letters from structured JSON data and tracks every application in one dashboard. React, TypeScript, Hono on Node, SQLite, session-based login; shipped as a Docker image via GitHub Actions and deployed through Portainer.
-- [Skatfreunde Bielefeld](https://skatfreunde-bielefeld.de/): live fullstack web application for a local Skat club to manage members, events and scores. React, TypeScript, C#, REST API with EF Core. Actively used by club members.
-- [ThouChat](https://github.com/lukaslangrock/backend-chan): hackathon chat application with real-time messaging over WebSockets; a switch rewrites messages in Shakespearean style. React, TypeScript, C#.
+- [Vita](https://vita.seanmaier.org/): fullstack tool for managing job applications, built solo with Claude Code as an AI agent. Generates print-ready CVs and cover letters from structured JSON data and tracks every application in one dashboard. Ships its own Claude Code skills and a token-authenticated API for AI agents. React, TypeScript, Hono on Node, SQLite, session-based login; Docker image built with GitHub Actions, published to GHCR and deployed through Portainer on his own VPS.
+- [Skatfreunde Bielefeld](https://skatfreunde-bielefeld.de/): live fullstack web application for a local Skat club to manage members, events and scores. Built solo; his first production application, used by club members every week. C#, ASP.NET Core, EF Core, React, TypeScript, PostgreSQL.
+- **Langfuse dataset tool** (internal at Hörmann, not public): web app for product specialists to maintain the datasets used to feed product data to an LLM and evaluate the correctness of its answers. Built solo as his first end-to-end TypeScript product, deliberately planned as a fast MVP. Next.js, TypeScript, React, Prisma, PostgreSQL, NextAuth, Langfuse API.
+- [ThouChat](https://github.com/lukaslangrock/backend-chan): hackathon chat application with real-time messaging over WebSockets; a switch rewrites messages in Shakespearean style. Built in a team of four. C#, WebSockets, React, TypeScript.
 - [Portfolio website](https://github.com/seanmaier/portfolio): this site. React, TypeScript, Tailwind CSS, fully responsive.
+
+## Way of working
+
+- Works with pull requests, code reviews and AI coding assistants as everyday tools, while keeping clear ownership of what gets merged.
+- Learns most when fully responsible for an outcome.
 
 ## Certificates
 
