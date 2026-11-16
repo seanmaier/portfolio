@@ -1,0 +1,5 @@
+# Search engines and AI assistants fetching pages on behalf of users are welcome.
+# A summary for LLMs is available at https://seanmaier.org/llms.txt
+
+User-agent: *
+Allow: /

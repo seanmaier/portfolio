@@ -1,0 +1,37 @@
+# Sean Maier
+
+> Junior Software Engineer at layer2 collaboration works (Germany). Fullstack developer with a focus on the backend, working mainly with C#/.NET, TypeScript and React. Languages: German (native), English (fluent), Swedish (beginner).
+
+This file summarizes the portfolio at https://seanmaier.org for AI agents and LLMs. The website itself is a client-rendered React app; all relevant content is reproduced here.
+
+## Career
+
+- **Junior Software Engineer, layer2 collaboration works** (Feb 2026 – present): building software solutions for enterprise clients, designing solutions for clients, developing internal software tools, orchestrating coding agents. https://www.layer2.de/
+- **Apprentice Software Engineering, Hörmann** (Aug 2023 – Jan 2026): professional software development across various technologies; automation and optimization of internal processes; experience with ERP systems such as SAP. https://www.hoermann.de/
+- **Student Software Engineering, b.i.b. International College** (Aug 2023 – Jan 2026): dual study program in parallel with the Hörmann apprenticeship, focused on practical software development, project management and teamwork. https://www.bib.de/
+- **Hackathon, PIT – Paderborn ist Informatik** (Sep 2024): built a software solution for a real-world challenge in a team over one weekend. https://paderborn-ist-informatik.de/
+- **Internship, Mehrwerk** (Jan 2019 – Feb 2019): first hands-on experience in IT and software development. https://www.mehrwerk.com/en/
+
+## Skills
+
+- Frontend: TypeScript, React, Tailwind CSS
+- Backend: C#, .NET, Blazor Server, EF Core, GraphQL, REST APIs, CLI tools
+- Databases: PostgreSQL, SQLite
+- DevOps & infrastructure: Azure, Docker, Linux, CI/CD
+
+## Projects
+
+- [Vita](https://vita.seanmaier.org/): fullstack tool for managing job applications. Generates print-ready CVs and cover letters from structured JSON data and tracks every application in one dashboard. React, TypeScript, Hono on Node, SQLite, session-based login; shipped as a Docker image via GitHub Actions and deployed through Portainer.
+- [Skatfreunde Bielefeld](https://skatfreunde-bielefeld.de/): live fullstack web application for a local Skat club to manage members, events and scores. React, TypeScript, C#, REST API with EF Core. Actively used by club members.
+- [ThouChat](https://github.com/lukaslangrock/backend-chan): hackathon chat application with real-time messaging over WebSockets; a switch rewrites messages in Shakespearean style. React, TypeScript, C#.
+- [Portfolio website](https://github.com/seanmaier/portfolio): this site. React, TypeScript, Tailwind CSS, fully responsive.
+
+## Certificates
+
+- Code with Mosh: JavaScript Basics for Beginners, Object-oriented Programming in JavaScript, The Ultimate TypeScript Course, Ultimate React Part 1 and Part 2
+
+## Contact
+
+- GitHub: https://github.com/seanmaier
+- LinkedIn: https://www.linkedin.com/in/maiersean/
+- Email: sean.maier@outlook.com
