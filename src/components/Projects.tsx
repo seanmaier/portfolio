@@ -5,6 +5,7 @@ import portfolio from "../assets/portfolio-logo.png";
 import { ProjectCard } from "./ProjectCard";
 import { useTranslation } from "react-i18next";
 import { motion } from "motion/react";
+import { DatabaseZap } from "lucide-react";
 import Reveal from "./Reveal";
 
 const Projects = () => {
@@ -67,6 +68,25 @@ const Projects = () => {
             <br />
             <Reveal>
               <br /> {t("jobApplications-description-2")}
+            </Reveal>
+          </div>
+        </ProjectCard>
+        <ProjectCard
+          title="Langfuse Dataset Tool"
+          internal
+          badges={["Next.js", "TypeScript", "Prisma", "PostgreSQL", "LLM"]}
+        >
+          <motion.div
+            whileHover={{ rotate: 5 }}
+            className="bg-creme text-primary-500 flex aspect-square w-80 items-center justify-center rounded-2xl p-5 shadow-lg shadow-gray-800 outline-2"
+          >
+            <DatabaseZap className="h-32 w-32" strokeWidth={1.5} aria-hidden />
+          </motion.div>
+          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
+            <Reveal>{t("langfuse-description-1")}</Reveal>
+            <br />
+            <Reveal>
+              <br /> {t("langfuse-description-2")}
             </Reveal>
           </div>
         </ProjectCard>

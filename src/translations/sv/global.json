@@ -58,7 +58,10 @@
     "jobApplications-description-2": "Byggt med React, TypeScript och en Hono-backend på Node med SQLite och sessionsbaserad inloggning. Appen körs som en Docker-image som byggs med GitHub Actions och driftsätts automatiskt via Portainer.",
     "skatfreunde-description-1": "Skatfreunde Bielefeld är en live fullstack-webbapplikation byggd med React, TypeScript och C#. Den fungerar som en plattform för den lokala Skat-klubben att hantera sina medlemmar, evenemang och poäng.",
     "skatfreunde-description-2": "Byggde ett REST API-backend med EF Core och driftsatte hela applikationen. Första verkliga projektet som aktivt används av klubbens medlemmar.",
-    "portfolio-description": "Denna portföljwebbplats är byggd med React, TypeScript och Tailwind CSS. Det var ett litet projekt bara för skojs skull för att visa upp mina färdigheter och projekt. Den är helt responsiv och fungerar på alla enheter."
+    "portfolio-description": "Denna portföljwebbplats är byggd med React, TypeScript och Tailwind CSS. Det var ett litet projekt bara för skojs skull för att visa upp mina färdigheter och projekt. Den är helt responsiv och fungerar på alla enheter.",
+    "internal": "Internt projekt",
+    "langfuse-description-1": "En intern webbapp på Hörmann för att underhålla de dataset som förser en LLM med produktdata och utvärderar hur korrekta dess svar är. Produktspecialisterna planerar och organiserar sitt dataunderhåll med den.",
+    "langfuse-description-2": "Jag byggde den på egen hand, min första produkt i TypeScript som jag ansvarade för från början till slut. Jag planerade medvetet en snabb MVP så att arkitekturbeslut inte drog ut på utvecklingscykeln."
   },
   "hobbies": {
     "title": "Mer om mig",

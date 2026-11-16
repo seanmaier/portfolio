@@ -12,6 +12,7 @@ interface Props {
   link?: string;
   badges?: string[];
   live?: boolean;
+  internal?: boolean;
 }
 
 export const ProjectCard = ({
@@ -22,6 +23,7 @@ export const ProjectCard = ({
   link,
   badges,
   live,
+  internal,
 }: Props) => {
   const [t] = useTranslation("global", { keyPrefix: "projects" });
 
@@ -59,10 +61,12 @@ export const ProjectCard = ({
             <Button
               onClick={() => window.open(link, "_blank")}
               fullWidth
-              disabled={disabled}
+              disabled={disabled || internal}
               variant="dotted"
             >
-              {disabled
+              {internal
+                ? t("internal")
+                : disabled
                 ? t("not-published")
                 : live
                   ? t("visit-site")
