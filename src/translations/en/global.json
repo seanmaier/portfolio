@@ -20,7 +20,7 @@
   },
   "career": {
     "title": "Career",
-    "layer2-title": "Junior Software Engineer at",
+    "layer2-title": "Software Engineer at",
     "layer2-date": "Feb. 2026 - Present",
     "layer2-description-1": "Building software solutions for enterprise clients at layer2 collaboration works.",
     "layer2-description-2": "Designing solutions for clients · Developing internal software tools · Orchestrating coding agents",
@@ -32,10 +32,10 @@
     "hoermann-date": "Aug. 2023 - Jan. 2026",
     "hoermann-description-1": "Apprenticeship as a software engineer at Hörmann, developing software in a professional environment across various technologies and methodologies.",
     "hoermann-description-2": "Automation and optimization of internal processes were central aspects of my work. I also gained experience with ERP systems like SAP.",
-    "bib-title": "Student Software Engineering at",
+    "bib-title": "Vocational School Software Development at",
     "bib-date": "Aug. 2023 - Jan. 2026",
-    "bib-description-1": "Enrolled in a software engineering program at b.i.b. International College with a focus on practical software development, project management, and teamwork.",
-    "bib-description-2": "Dual study program running in parallel with the apprenticeship at Hörmann.",
+    "bib-description-1": "Vocational school part of my dual apprenticeship as a software developer, with a focus on practical software development, project management, and teamwork.",
+    "bib-description-2": "Ran in parallel with the practical training at Hörmann as one dual apprenticeship.",
     "mehrwerk-title": "Internship at",
     "mehrwerk-date": "Jan. 2019 - Feb. 2019",
     "mehrwerk-description": "First hands-on experience in IT and software development. Learned about the structure of a software company and how to work in a team."
@@ -52,13 +52,14 @@
     "check-out": "Check out the code",
     "visit-site": "Visit site",
     "not-published": "Not published yet",
-    "thouChat-description-1": "A chat application built with React, TypeScript and C# over a weekend. It allows users to create accounts, join chat rooms, and send messages in real-time with a catch. Via a switch the user sends his messages in a shakespearean style.",
-    "thouChat-description-2": "This was my first time working with web sockets and in a larger team of young developers. I also learned how to present my work to a larger audience and showcase its features.",
     "jobApplications-description-1": "Vita is a fullstack tool for managing job applications. It generates print-ready CVs and cover letters from structured JSON data and tracks the status of every application in a single dashboard.",
     "jobApplications-description-2": "Built with React, TypeScript and a Hono backend on Node with SQLite and session-based login. It runs as a Docker image published via GitHub Actions and deployed automatically through Portainer.",
     "skatfreunde-description-1": "Skatfreunde Bielefeld is a live fullstack web application built with React, TypeScript, and C#. It serves as a platform for the local Skat club to manage their members, events, and scores.",
     "skatfreunde-description-2": "Built a REST API backend with EF Core and deployed the full application. First real-world project that is actively used by club members.",
-    "portfolio-description": "This portfolio website is built with React, TypeScript, and Tailwind CSS. It was a small just for fun project to showcase my skills and projects. It is fully responsive and works on all devices."
+    "portfolio-description": "This portfolio website is built with React, TypeScript, and Tailwind CSS. It was a small just for fun project to showcase my skills and projects. It is fully responsive and works on all devices.",
+    "internal": "Internal project",
+    "langfuse-description-1": "An internal web app at Hörmann for maintaining the datasets that feed product data to an LLM and evaluate the correctness of its answers. Product specialists use it to plan and organize their data maintenance.",
+    "langfuse-description-2": "I built it on my own, my first product in TypeScript that I owned from start to finish. I deliberately planned a fast-to-build MVP so architectural decisions would not stretch the development cycle."
   },
   "hobbies": {
     "title": "More about me",

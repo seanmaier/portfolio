@@ -20,7 +20,7 @@
   },
   "career": {
     "title": "Karriär",
-    "layer2-title": "Junior Software Engineer hos",
+    "layer2-title": "Software Engineer hos",
     "layer2-date": "Feb. 2026 - Nuvarande",
     "layer2-description-1": "Utvecklar mjukvarulösningar för företagskunder hos layer2 collaboration works.",
     "layer2-description-2": "Utforma lösningar för kunder · Utveckla interna mjukvaruverktyg · Orkestrering av kodningsagenter",
@@ -32,10 +32,10 @@
     "hoermann-date": "Aug. 2023 - Jan. 2026",
     "hoermann-description-1": "Lärlingsutbildning som mjukvaruutvecklare på Hörmann i en professionell miljö med olika teknologier och metoder.",
     "hoermann-description-2": "Automatisering och optimering av interna processer var centrala delar av arbetet. Fick även erfarenhet av ERP-system som SAP.",
-    "bib-title": "Studerande inom mjukvaruutveckling på",
+    "bib-title": "Yrkesskola inom mjukvaruutveckling på",
     "bib-date": "Aug. 2023 - Jan. 2026",
-    "bib-description-1": "Mjukvaruutvecklingsprogram på b.i.b. International College med fokus på praktisk tillämpning, projektledning och teamarbete.",
-    "bib-description-2": "Kombinerad utbildning parallellt med lärlingsutbildningen på Hörmann.",
+    "bib-description-1": "Den skolförlagda delen av min lärlingsutbildning till mjukvaruutvecklare, med fokus på praktisk mjukvaruutveckling, projektledning och teamarbete.",
+    "bib-description-2": "Löpte parallellt med den praktiska utbildningen på Hörmann som en sammanhållen lärlingsutbildning.",
     "mehrwerk-title": "Praktik hos",
     "mehrwerk-date": "Jan 2019 - Feb 2019",
     "mehrwerk-description": "Första praktiska erfarenheten inom IT och mjukvaruutveckling. Lärde mig om strukturen i ett mjukvaruföretag och att arbeta i team."
@@ -52,13 +52,14 @@
     "check-out": "Kolla in koden",
     "visit-site": "Besök sidan",
     "not-published": "Inte publicerat än",
-    "thouChat-description-1": "En chattapplikation byggd med React, TypeScript och C# under en helg. Den låter användare skapa konton, gå med i chattrum och skicka meddelanden i realtid - med en twist. Med en knapptryckning kan användaren skicka sina meddelanden i shakespeariansk stil.",
-    "thouChat-description-2": "Detta var första gången jag arbetade med webbsockets och i ett större team av unga utvecklare. Jag lärde mig också hur man presenterar sitt arbete för en större publik och visar upp dess funktioner.",
     "jobApplications-description-1": "Vita är ett fullstackverktyg för att hantera jobbansökningar. Det genererar utskriftsklara CV:n och personliga brev från strukturerad JSON-data och följer statusen för varje ansökan i en samlad instrumentpanel.",
     "jobApplications-description-2": "Byggt med React, TypeScript och en Hono-backend på Node med SQLite och sessionsbaserad inloggning. Appen körs som en Docker-image som byggs med GitHub Actions och driftsätts automatiskt via Portainer.",
     "skatfreunde-description-1": "Skatfreunde Bielefeld är en live fullstack-webbapplikation byggd med React, TypeScript och C#. Den fungerar som en plattform för den lokala Skat-klubben att hantera sina medlemmar, evenemang och poäng.",
     "skatfreunde-description-2": "Byggde ett REST API-backend med EF Core och driftsatte hela applikationen. Första verkliga projektet som aktivt används av klubbens medlemmar.",
-    "portfolio-description": "Denna portföljwebbplats är byggd med React, TypeScript och Tailwind CSS. Det var ett litet projekt bara för skojs skull för att visa upp mina färdigheter och projekt. Den är helt responsiv och fungerar på alla enheter."
+    "portfolio-description": "Denna portföljwebbplats är byggd med React, TypeScript och Tailwind CSS. Det var ett litet projekt bara för skojs skull för att visa upp mina färdigheter och projekt. Den är helt responsiv och fungerar på alla enheter.",
+    "internal": "Internt projekt",
+    "langfuse-description-1": "En intern webbapp på Hörmann för att underhålla de dataset som förser en LLM med produktdata och utvärderar hur korrekta dess svar är. Produktspecialisterna planerar och organiserar sitt dataunderhåll med den.",
+    "langfuse-description-2": "Jag byggde den på egen hand, min första produkt i TypeScript som jag ansvarade för från början till slut. Jag planerade medvetet en snabb MVP så att arkitekturbeslut inte drog ut på utvecklingscykeln."
   },
   "hobbies": {
     "title": "Mer om mig",
