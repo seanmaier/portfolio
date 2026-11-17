@@ -1,4 +1,3 @@
-import thouChat from "../assets/thouchat-logo.png";
 import jobApplications from "../assets/vita.svg";
 import skat from "../assets/skatspieler.png";
 import portfolio from "../assets/portfolio-logo.png";
@@ -104,25 +103,6 @@ const Projects = () => {
           <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
             <Reveal>{t("portfolio-description")}</Reveal>
           </div>
-        </ProjectCard>
-        <ProjectCard
-          link="https://github.com/lukaslangrock/backend-chan"
-          title="ThouChat - Hackathon"
-          badges={["React", "TypeScript", "C#", "WebSockets"]}
-        >
-          <motion.img
-            whileHover={{ rotate: 5 }}
-            className="w-80 rounded-2xl shadow-lg shadow-gray-800 outline-2"
-            src={thouChat}
-            loading="lazy"
-          />
-          <div className="text-white text-shadow-[0_0_100px_rgba(0,0,0,0.5)]">
-            <Reveal>{t("thouChat-description-1")}</Reveal>
-            <br />
-            <br />
-            <Reveal>{t("thouChat-description-2")}</Reveal>
-          </div>
-          <div className="flex flex-wrap gap-1"></div>
         </ProjectCard>
       </div>
     </section>

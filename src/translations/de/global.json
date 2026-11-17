@@ -52,8 +52,6 @@
     "check-out": "Zum Code",
     "visit-site": "Seite besuchen",
     "not-published": "Noch nicht veröffentlicht",
-    "thouChat-description-1": "Eine Chat-Anwendung, die an einem Wochenende mit React, TypeScript und C# entwickelt wurde. Sie ermöglicht es Nutzern, Konten zu erstellen, Chat-Räumen beizutreten und Nachrichten in Echtzeit zu senden - mit einem besonderen Twist: Mit einem Klick können Nachrichten im Shakespeare-Stil verschickt werden.",
-    "thouChat-description-2": "Das war das erste Mal, dass ich mit Websockets gearbeitet und in einem größeren Team junger Entwickler zusammengearbeitet habe. Ich habe auch gelernt, wie man seine Arbeit vor einem größeren Publikum präsentiert und die Funktionen demonstriert.",
     "jobApplications-description-1": "Vita ist ein Fullstack-Tool zur Verwaltung von Bewerbungen. Es erzeugt druckfertige Lebensläufe und Anschreiben aus strukturierten JSON-Daten und verfolgt den Status jeder Bewerbung in einem zentralen Dashboard.",
     "jobApplications-description-2": "Umgesetzt mit React, TypeScript und einem Hono-Backend auf Node mit SQLite und sessionbasiertem Login. Die App läuft als Docker-Image, das per GitHub Actions gebaut und automatisch über Portainer deployt wird.",
     "skatfreunde-description-1": "Skatfreunde Bielefeld ist eine live Fullstack-Webanwendung mit React, TypeScript und C#. Sie dient als Plattform für den lokalen Skat-Club zur Verwaltung von Mitgliedern, Veranstaltungen und Punkten.",
