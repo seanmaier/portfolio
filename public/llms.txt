@@ -1,12 +1,12 @@
 # Sean Maier
 
-> Junior Software Engineer at layer2 collaboration works (Germany). Fullstack developer with a focus on the backend. Main language C#/.NET, second language TypeScript/React. Languages: German (native), English (fluent), Swedish (beginner).
+> Software Engineer at layer2 collaboration works (Germany). Fullstack developer with a focus on the backend. Main language C#/.NET, second language TypeScript/React. Languages: German (native), English (fluent), Swedish (beginner).
 
 This file summarizes the portfolio at https://seanmaier.org for AI agents and LLMs. The website itself is a client-rendered React app; all relevant content is reproduced here.
 
 ## Career
 
-- **Junior Software Engineer, layer2 collaboration works** (Feb 2026 – present): Microsoft 365 consultancy. Delivers client projects end to end, from gathering requirements with the client to implementation and deployment: web apps, backend integrations between Microsoft 365, SharePoint and client systems via REST APIs and Microsoft Graph, deployments with .NET Aspire and Bicep on Azure. Designed and built an internal generic tool for structure and data migrations. Works daily with AI coding agents, writes custom skills for them and automates processes with them. https://www.layer2.de/
+- **Software Engineer, layer2 collaboration works** (Feb 2026 – present): Microsoft 365 consultancy. Delivers client projects end to end, from gathering requirements with the client to implementation and deployment: web apps, backend integrations between Microsoft 365, SharePoint and client systems via REST APIs and Microsoft Graph, deployments with .NET Aspire and Bicep on Azure. Designed and built an internal generic tool for structure and data migrations. Works daily with AI coding agents, writes custom skills for them and automates processes with them. https://www.layer2.de/
 - **Dual vocational apprenticeship as a software developer, Hörmann and b.i.b. International College** (Aug 2023 – Jan 2026): built REST APIs, relational data models and automated tests for internal business applications at Hörmann and automated internal processes in an industrial environment. Gained experience with ERP systems such as SAP. The vocational school part took place at b.i.b. International College. https://www.hoermann.de/ · https://www.bib.de/
 - **Hackathon, PIT – Paderborn ist Informatik** (Sep 2024): built ThouChat in a team of four over one weekend. https://paderborn-ist-informatik.de/
 - **Internship, Mehrwerk** (Jan 2019 – Feb 2019): first hands-on experience in a professional software team. https://www.mehrwerk.com/en/
